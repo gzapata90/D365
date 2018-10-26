@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="dwdev-ADO NET"
+  DTS:DTSID="{34F9F3B2-9748-4EB2-8DEF-8104EE9C1CF7}"
+  DTS:CreationName="ADO.NET:System.Data.OracleClient.OracleConnection, System.Data.OracleClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=dwdev1.byu.edu;User ID=oit#gzapata;Persist Security Info=True;Unicode=True;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAswSjCNssqE6GxwLgcyQgzQAAAAACAAAAAAADZgAAwAAAABAAAACFaiE+2IFt/3YVfglIXfPCAAAAAASAAACgAAAAEAAAAGZQeqsKOJkpDc5uarKwzTuAAAAADzyQCkF4fkKCfFzpVMIzSZ8uBh406G+W70EOeKKovNnD9PCk8XoXGAORv+e94eDQra0bYnXlHOB23KWzYIy93fQ4wIQ/0Om0nZV2O+x4L5NHRYtqTsQ4QssMDLZZ8f0zN9n5dlJmrLmjbMEbKdlLwPyQmrTosQt8zAcqdE2Vc3QUAAAArEj6nJYsfeluypYsAAtYprwJISU=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

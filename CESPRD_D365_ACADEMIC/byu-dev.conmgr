@@ -1,0 +1,13 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="byu-dev"
+  DTS:DTSID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}"
+  DTS:CreationName="DynamicsCRM">
+  <DTS:ObjectData>
+    <CrmConnectionManager
+      ConnectionString="AuthenticationType=OnlineFederation;ServiceEndpoint=Soap2011;DiscoveryServerUrl=https://disco.crm.dynamics.com;UserName=svc_crm_admin@byu.onmicrosoft.com;Domain=;OrganizationName=byu-dev;CrmServerUrl=https://byu-dev.api.crm.dynamics.com;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False">
+      <Password
+        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAswSjCNssqE6GxwLgcyQgzQAAAAACAAAAAAADZgAAwAAAABAAAABG9j+MFw18OiV8P8Xtn+54AAAAAASAAACgAAAAEAAAAKx5vMDCmiZmhfkJ0ybkpG1YAAAA8sqYzlsrUIWKck2nNdCzw+XSJJ9yaqnuV2Ph7JIdR3xMX5x4hRzaA5gdq71gY7H+O/0d7bGho9fbizUZQSkXEUYsmEL4gzhkGdqEsILl+kok8XVUVx0BTRQAAAADbG+7ai/8G9PRFVPAU6dmLay5qg==</Password>
+    </CrmConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
