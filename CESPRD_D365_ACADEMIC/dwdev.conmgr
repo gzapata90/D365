@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="dwdev"
+  DTS:ObjectName="CESPRD"
   DTS:DTSID="{D891773B-EF5C-4479-955C-203530BDD0B9}"
   DTS:CreationName="MSORA">
   <DTS:ObjectData>
     <OracleXMLPackage>
-      <OraConnectionString>SERVER=dwdev1;USERNAME=oit#gzapata;ORACLEHOME=;ORACLEHOME64=;WINAUTH=0</OraConnectionString>
+      <OraConnectionString>SERVER=CESPRD;USERNAME=oit#db656;ORACLEHOME=;ORACLEHOME64=;WINAUTH=0</OraConnectionString>
       <OraRetain>False</OraRetain>
       <OraInitialCatalog></OraInitialCatalog>
-      <OraServerName>dwdev1</OraServerName>
-      <OraUserName>oit#gzapata</OraUserName>
+      <OraServerName>CESPRD</OraServerName>
+      <OraUserName>oit#db656</OraUserName>
       <OraOracleHome></OraOracleHome>
       <OraOracleHome64></OraOracleHome64>
       <OraWinAuthentication>False</OraWinAuthentication>
       <OraEnableDetailedTracing>False</OraEnableDetailedTracing>
       <OraPassword
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAswSjCNssqE6GxwLgcyQgzQAAAAACAAAAAAADZgAAwAAAABAAAAA+V2GcrROCX9AxRQWLOzUSAAAAAASAAACgAAAAEAAAAGoM+DVzGYwgVGKsS/xkzu5AAAAAeHE2hURQdDJohu4Bh75RP86PP85fzoBbRK7gJB39vAeqHEJiZvV8rsXlFQ+wZVZIW4wGgpFBIHGAyYkb5mBAaxQAAABF8U+d5k9HEEeW3qNbQOUzzmCfVg==</OraPassword>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4gHhXo5PE0O9TrCKRNrwgwAAAAACAAAAAAADZgAAwAAAABAAAACUKK4a41QkakbjXgg4ntutAAAAAASAAACgAAAAEAAAAEHWgtFiXA194yQLUkG+HL5AAAAA7PN/0MXWyMXFMEe0TrIjWoFZ6zM7Q3ILtKFytrVV+3knowQxhKeObNR79mKyRDvf2RwOnr9g3XFMnOdK8ETl5RQAAADiho6YP695/Si+gqe68vxxFMabEw==</OraPassword>
     </OracleXMLPackage>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
