@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="dwdev-ADO NET"
+  DTS:ObjectName="cesprd-ADO NET"
   DTS:DTSID="{34F9F3B2-9748-4EB2-8DEF-8104EE9C1CF7}"
   DTS:CreationName="ADO.NET:System.Data.OracleClient.OracleConnection, System.Data.OracleClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
   <DTS:ObjectData>
@@ -8,7 +8,7 @@
       DTS:ConnectionString="Data Source=CESPRD.byu.edu;User ID=oit#db656;Persist Security Info=True;Unicode=True;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4gHhXo5PE0O9TrCKRNrwgwAAAAACAAAAAAADZgAAwAAAABAAAAACenUfz3ywGXSWWD+mYxTeAAAAAASAAACgAAAAEAAAAGwkzY5qPnaTwjGhVpv/IouAAAAAoTqY5JkuurpoFM6IZZjcvk4yyBZkeiCxyA0qJfDpvqPJ/9iOM7Z1t3f15l8A/fQQug+eJ3Bj6WmuDUdNAvm4rP6zgwD54LImBV0PGxDd+2gIAeUAw/HRaHc5ohIQDzAryfKCdzbLCTANc+KQgQwEHGhbej5Xgrlz4ZmopcI6DmEUAAAARGLq3r9hdYCFl6CCW3qYotC0/8o=</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGbqaPNqdtEOXE0F/Y2wnNwAAAAACAAAAAAADZgAAwAAAABAAAAD5581Lauah4KcWWRQgAG9FAAAAAASAAACgAAAAEAAAAD3vNMknOS7zi+ksLEUK2U2AAAAANWC25zrg1yIId+Ezd88Mfw/sTob0Ok6EYMiiv7VSNBIzNxyzJcDIknaZ7V8flDw4wOfbs21oHAoppv2V8u5/OC4uS+rQdcnNd8FfpQ1qVvdfki1/otlXXdhuILlRmDwNMxREdcN3utF9DAWLdFAXTKBqkCNdI25keSb1dRXygNEUAAAAh0nn5yrNMEAg8SflgiM9ez/6LNY=</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

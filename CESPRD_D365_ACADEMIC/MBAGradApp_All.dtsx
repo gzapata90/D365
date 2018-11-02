@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MBAGradApp_All"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{32AACF78-B446-42E1-96E4-6657F8BB39DE}">
+  DTS:VersionBuild="29"
+  DTS:VersionGUID="{AEB38D91-A409-4E6F-B00C-22761A1AE10A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -240,7 +240,7 @@
                     <connection
                       refId="Package\Sequence Container\Education All\Dynamics CRM Destination Error Log.Connections[DynamicsCRM]"
                       connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                      connectionManagerRefId="Project.ConnectionManagers[byu]"
                       description="Dynamics CRM Connection Manager"
                       name="DynamicsCRM" />
                   </connections>
@@ -636,7 +636,7 @@
                     <connection
                       refId="Package\Sequence Container\Education All\Dynamics CRM Destination For Education.Connections[DynamicsCRM]"
                       connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                      connectionManagerRefId="Project.ConnectionManagers[byu]"
                       description="Dynamics CRM Connection Manager"
                       name="DynamicsCRM" />
                   </connections>
@@ -1256,7 +1256,7 @@ WHERE std.PERSON_ID IN (
                     <connection
                       refId="Package\Sequence Container\Education All\Oracle Source For Grad Ed.Connections[MSOraConnection]"
                       connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
+                      connectionManagerRefId="Project.ConnectionManagers[cesprd]"
                       description="The Oracle runtime connection"
                       name="MSOraConnection" />
                   </connections>
@@ -1862,7 +1862,7 @@ WHERE std.PERSON_ID IN (
                     <connection
                       refId="Package\Sequence Container\Employment All\Dynamics CRM Destination Error Log.Connections[DynamicsCRM]"
                       connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                      connectionManagerRefId="Project.ConnectionManagers[byu]"
                       description="Dynamics CRM Connection Manager"
                       name="DynamicsCRM" />
                   </connections>
@@ -2258,7 +2258,7 @@ WHERE std.PERSON_ID IN (
                     <connection
                       refId="Package\Sequence Container\Employment All\Dynamics CRM Destination For Employment.Connections[DynamicsCRM]"
                       connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                      connectionManagerRefId="Project.ConnectionManagers[byu]"
                       description="Dynamics CRM Connection Manager"
                       name="DynamicsCRM" />
                   </connections>
@@ -2819,7 +2819,7 @@ ORDER BY p.BYU_ID</property>
                     <connection
                       refId="Package\Sequence Container\Employment All\Oracle Source For Employment.Connections[MSOraConnection]"
                       connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
+                      connectionManagerRefId="Project.ConnectionManagers[cesprd]"
                       description="The Oracle runtime connection"
                       name="MSOraConnection" />
                   </connections>
@@ -3218,7 +3218,7 @@ ORDER BY p.BYU_ID</property>
                     <connection
                       refId="Package\Sequence Container\Exams All\Dynamics CRM Destination Error Log.Connections[DynamicsCRM]"
                       connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                      connectionManagerRefId="Project.ConnectionManagers[byu]"
                       description="Dynamics CRM Connection Manager"
                       name="DynamicsCRM" />
                   </connections>
@@ -3614,7 +3614,7 @@ ORDER BY p.BYU_ID</property>
                     <connection
                       refId="Package\Sequence Container\Exams All\Dynamics CRM Destination For Exams.Connections[DynamicsCRM]"
                       connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                      connectionManagerRefId="Project.ConnectionManagers[byu]"
                       description="Dynamics CRM Connection Manager"
                       name="DynamicsCRM" />
                   </connections>
@@ -4216,7 +4216,7 @@ ORDER BY p.BYU_ID</property>
                     <connection
                       refId="Package\Sequence Container\Exams All\Oracle Source For Exams.Connections[MSOraConnection]"
                       connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
+                      connectionManagerRefId="Project.ConnectionManagers[cesprd]"
                       description="The Oracle runtime connection"
                       name="MSOraConnection" />
                   </connections>
@@ -4643,7 +4643,7 @@ ORDER BY p.BYU_ID</property>
                     <connection
                       refId="Package\Sequence Container\Grad Application All\Dynamics CRM Destination Error Log.Connections[DynamicsCRM]"
                       connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                      connectionManagerRefId="Project.ConnectionManagers[byu]"
                       description="Dynamics CRM Connection Manager"
                       name="DynamicsCRM" />
                   </connections>
@@ -5039,7 +5039,7 @@ ORDER BY p.BYU_ID</property>
                     <connection
                       refId="Package\Sequence Container\Grad Application All\Dynamics CRM Destination For Grad App.Connections[DynamicsCRM]"
                       connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                      connectionManagerRefId="Project.ConnectionManagers[byu]"
                       description="Dynamics CRM Connection Manager"
                       name="DynamicsCRM" />
                   </connections>
@@ -6034,7 +6034,7 @@ ORDER BY p.BYU_ID</property>
                     <connection
                       refId="Package\Sequence Container\Grad Application All\Oracle Source for Grad App.Connections[MSOraConnection]"
                       connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
+                      connectionManagerRefId="Project.ConnectionManagers[cesprd]"
                       description="The Oracle runtime connection"
                       name="MSOraConnection" />
                   </connections>
@@ -6528,6 +6528,14 @@ ORDER BY p.BYU_ID</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="204,42"
+          Id="Package\Sequence Container\Education All\Oracle Source For Grad Ed"
+          TopLeft="111,28" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Sequence Container\Education All\Derived Column"
+          TopLeft="132,126" />
+        <NodeLayout
           Size="252,42"
           Id="Package\Sequence Container\Education All\Dynamics CRM Destination Error Log"
           TopLeft="88,336" />
@@ -6535,10 +6543,30 @@ ORDER BY p.BYU_ID</property>
           Size="273,42"
           Id="Package\Sequence Container\Education All\Dynamics CRM Destination For Education"
           TopLeft="73,228" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Sequence Container\Education All\Derived Column"
-          TopLeft="132,126" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Education All.Paths[Oracle Source Output]"
+          TopLeft="211,70">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56"
+              Start="0,0"
+              End="0,48.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Education All.Paths[Error Output]"
           TopLeft="211.75,270">
@@ -6582,33 +6610,9 @@ ORDER BY p.BYU_ID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="204,42"
-          Id="Package\Sequence Container\Education All\Oracle Source For Grad Ed"
-          TopLeft="111,28" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Education All.Paths[Oracle Source Output]"
-          TopLeft="211,70">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,56"
-              Start="0,0"
-              End="0,48.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6620,6 +6624,14 @@ ORDER BY p.BYU_ID</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="225,42"
+          Id="Package\Sequence Container\Employment All\Oracle Source For Employment"
+          TopLeft="89,46" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Sequence Container\Employment All\Derived Column"
+          TopLeft="132,156" />
+        <NodeLayout
           Size="252,42"
           Id="Package\Sequence Container\Employment All\Dynamics CRM Destination Error Log"
           TopLeft="82,365" />
@@ -6627,34 +6639,6 @@ ORDER BY p.BYU_ID</property>
           Size="285,42"
           Id="Package\Sequence Container\Employment All\Dynamics CRM Destination For Employment"
           TopLeft="68,262" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Sequence Container\Employment All\Derived Column"
-          TopLeft="132,156" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Employment All.Paths[Error Output]"
-          TopLeft="209.25,304">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,61"
-              Start="0,0"
-              End="0,53.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,53.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-28.33638671875,21.033203125,56.6727734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Employment All.Paths[Derived Column Output]"
           TopLeft="209.75,198">
@@ -6677,10 +6661,6 @@ ORDER BY p.BYU_ID</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="225,42"
-          Id="Package\Sequence Container\Employment All\Oracle Source For Employment"
-          TopLeft="89,46" />
         <EdgeLayout
           Id="Package\Sequence Container\Employment All.Paths[Oracle Source Output]"
           TopLeft="205.25,88">
@@ -6701,6 +6681,30 @@ ORDER BY p.BYU_ID</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Employment All.Paths[Error Output]"
+          TopLeft="209.25,304">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61"
+              Start="0,0"
+              End="0,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-28.33638671875,21.033203125,56.6727734375,11.43359375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6727,28 +6731,6 @@ ORDER BY p.BYU_ID</property>
           Size="154,42"
           Id="Package\Sequence Container\Exams All\Derived Column"
           TopLeft="191,158" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Exams All.Paths[Oracle Source Output]"
-          TopLeft="265.75,97">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,61"
-              Start="0,0"
-              End="0,53.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,53.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Exams All.Paths[Error Output]"
           TopLeft="264.75,312">
@@ -6792,7 +6774,33 @@ ORDER BY p.BYU_ID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Exams All.Paths[Oracle Source Output]"
+          TopLeft="265.75,97">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61"
+              Start="0,0"
+              End="0,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6819,28 +6827,6 @@ ORDER BY p.BYU_ID</property>
           Size="271,42"
           Id="Package\Sequence Container\Grad Application All\Dynamics CRM Destination For Grad App"
           TopLeft="95,255" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Grad Application All.Paths[Derived Column Output]"
-          TopLeft="232.75,199">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,56"
-              Start="0,0"
-              End="0,48.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Grad Application All.Paths[Oracle Source Output]"
           TopLeft="233.5,86">
@@ -6885,6 +6871,28 @@ ORDER BY p.BYU_ID</property>
             <mssgm:EdgeLabel
               BoundingBox="-28.33638671875,24.533203125,56.6727734375,11.43359375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Grad Application All.Paths[Derived Column Output]"
+          TopLeft="232.75,199">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56"
+              Start="0,0"
+              End="0,48.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

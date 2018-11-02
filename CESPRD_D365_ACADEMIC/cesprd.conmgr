@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="CESPRD"
+  DTS:ObjectName="cesprd"
   DTS:DTSID="{D891773B-EF5C-4479-955C-203530BDD0B9}"
   DTS:CreationName="MSORA">
   <DTS:ObjectData>
@@ -15,7 +15,7 @@
       <OraWinAuthentication>False</OraWinAuthentication>
       <OraEnableDetailedTracing>False</OraEnableDetailedTracing>
       <OraPassword
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4gHhXo5PE0O9TrCKRNrwgwAAAAACAAAAAAADZgAAwAAAABAAAACUKK4a41QkakbjXgg4ntutAAAAAASAAACgAAAAEAAAAEHWgtFiXA194yQLUkG+HL5AAAAA7PN/0MXWyMXFMEe0TrIjWoFZ6zM7Q3ILtKFytrVV+3knowQxhKeObNR79mKyRDvf2RwOnr9g3XFMnOdK8ETl5RQAAADiho6YP695/Si+gqe68vxxFMabEw==</OraPassword>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGbqaPNqdtEOXE0F/Y2wnNwAAAAACAAAAAAADZgAAwAAAABAAAAACK2Azkjbfo9HFJKzOcV5NAAAAAASAAACgAAAAEAAAAJdnrZwzCLeSmpFo8XQ4AiBAAAAA/t4wgvDhxXygPsjv+9W2Wj4vZuMrHORXJLdgtzRfPzj/dXriVtNu0NWPB0qVlcTNdZQJ7rQtxlKnQTTx7+4k5xQAAAA9TDgTASaXF12QEEKllAZxRN9FlA==</OraPassword>
     </OracleXMLPackage>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

@@ -7,7 +7,7 @@
     <CrmConnectionManager
       ConnectionString="AuthenticationType=OnlineFederation;ServiceEndpoint=Soap2011;DiscoveryServerUrl=https://disco.crm.dynamics.com;UserName=svc_crm_admin@byu.onmicrosoft.com;Domain=;OrganizationName=BYU;CrmServerUrl=https://byu.api.crm.dynamics.com;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False">
       <Password
-        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4gHhXo5PE0O9TrCKRNrwgwAAAAACAAAAAAADZgAAwAAAABAAAADHJQgTO/QTjPbIR9IcNIJLAAAAAASAAACgAAAAEAAAAOjRZzLcrA/7T1/89xhdp7xYAAAAFIYSVWmmnh9sW/O0quOlaeV5L/MQ/T/yQLJyex242Kuli1xY5jWVHIHPf+d66rYTEMkK2A2nr7Snv5LQuZTklFbiOXmFsIufFM8KuARBu3AqWNa3gYFzhBQAAAAgnw/nhDqfemI/j1FJgtmC1skFcQ==</Password>
+        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGbqaPNqdtEOXE0F/Y2wnNwAAAAACAAAAAAADZgAAwAAAABAAAAC8CNS/C5rkKEfXKIPd2qwAAAAAAASAAACgAAAAEAAAAM9GFjuHKtTK4KynFpX7RYRYAAAA29ja0NGn5aciXDnd00ug15bFwS1PZJ4hA4+QGszEAPUJfPFD2NfYXGCSMu4uRfGFjMeNW+nGr1pk95bAVkMXJ2WfrfEIdOXPEx1wp/0DacFv8sS+lhse8xQAAABO5ziV45/fU/XCw6Vp4F0sZzjglQ==</Password>
     </CrmConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
