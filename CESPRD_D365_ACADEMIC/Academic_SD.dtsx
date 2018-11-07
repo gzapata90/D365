@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="ITB-2216-STU2"
   DTS:CreatorName="BYU\mander2"
-  DTS:DTSID="{FAC68B40-8EE5-47AD-A475-BC2098F4273C}"
+  DTS:DTSID="{3FDCC9C4-620B-4D7C-9C61-9EACBF0FBA5A}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="14.0.3002.107"
   DTS:LocaleID="1033"
-  DTS:ObjectName="AcademicSeedData"
+  DTS:ObjectName="Academic_SD"
   DTS:PackageType="5"
-  DTS:VersionBuild="68"
-  DTS:VersionGUID="{2BBAD58D-D7C0-4874-B754-FBCA3C03A8B4}">
+  DTS:VersionBuild="70"
+  DTS:VersionGUID="{7418C390-4CE2-4B29-876A-548FE1407564}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -199,7 +199,7 @@
                 <connection
                   refId="Package\Academic Units\Dynamics CRM Destination.Connections[DynamicsCRM]"
                   connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                  connectionManagerRefId="Project.ConnectionManagers[byu]"
                   description="Dynamics CRM Connection Manager"
                   name="DynamicsCRM" />
               </connections>
@@ -569,7 +569,7 @@
                 <connection
                   refId="Package\Academic Units\Dynamics CRM Error log.Connections[DynamicsCRM]"
                   connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                  connectionManagerRefId="Project.ConnectionManagers[byu]"
                   description="Dynamics CRM Connection Manager"
                   name="DynamicsCRM" />
               </connections>
@@ -946,7 +946,7 @@ WHERE std.PERSON_ID IN (
                 <connection
                   refId="Package\Academic Units\Oracle Source  For Acd Units.Connections[MSOraConnection]"
                   connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
+                  connectionManagerRefId="Project.ConnectionManagers[cesprd]"
                   description="The Oracle runtime connection"
                   name="MSOraConnection" />
               </connections>
@@ -1231,7 +1231,7 @@ WHERE std.PERSON_ID IN (
                 <connection
                   refId="Package\Degrees\Dynamics CRM Destination.Connections[DynamicsCRM]"
                   connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                  connectionManagerRefId="Project.ConnectionManagers[byu]"
                   description="Dynamics CRM Connection Manager"
                   name="DynamicsCRM" />
               </connections>
@@ -1601,7 +1601,7 @@ WHERE std.PERSON_ID IN (
                 <connection
                   refId="Package\Degrees\Dynamics CRM Destination 1.Connections[DynamicsCRM]"
                   connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                  connectionManagerRefId="Project.ConnectionManagers[byu]"
                   description="Dynamics CRM Connection Manager"
                   name="DynamicsCRM" />
               </connections>
@@ -1977,7 +1977,7 @@ WHERE std.PERSON_ID IN (
                 <connection
                   refId="Package\Degrees\Oracle Source.Connections[MSOraConnection]"
                   connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
+                  connectionManagerRefId="Project.ConnectionManagers[cesprd]"
                   description="The Oracle runtime connection"
                   name="MSOraConnection" />
               </connections>
@@ -2262,7 +2262,7 @@ WHERE std.PERSON_ID IN (
                 <connection
                   refId="Package\Institutions\Dynamics CRM Destination.Connections[DynamicsCRM]"
                   connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                  connectionManagerRefId="Project.ConnectionManagers[byu]"
                   description="Dynamics CRM Connection Manager"
                   name="DynamicsCRM" />
               </connections>
@@ -2604,7 +2604,7 @@ WHERE std.PERSON_ID IN (
                 <connection
                   refId="Package\Institutions\Dynamics CRM Destination Error Log.Connections[DynamicsCRM]"
                   connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                  connectionManagerRefId="Project.ConnectionManagers[byu]"
                   description="Dynamics CRM Connection Manager"
                   name="DynamicsCRM" />
               </connections>
@@ -2980,7 +2980,7 @@ WHERE std.PERSON_ID IN (
                 <connection
                   refId="Package\Institutions\Oracle Source For Institutions.Connections[MSOraConnection]"
                   connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
+                  connectionManagerRefId="Project.ConnectionManagers[cesprd]"
                   description="The Oracle runtime connection"
                   name="MSOraConnection" />
               </connections>
@@ -3253,7 +3253,7 @@ WHERE std.PERSON_ID IN (
                     <connection
                       refId="Package\Program Sequence Container\BYU Programs\Dynamics CRM Destination BYU Programs.Connections[DynamicsCRM]"
                       connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                      connectionManagerRefId="Project.ConnectionManagers[byu]"
                       description="Dynamics CRM Connection Manager"
                       name="DynamicsCRM" />
                   </connections>
@@ -3795,7 +3795,7 @@ WHERE std.PERSON_ID IN (
                     <connection
                       refId="Package\Program Sequence Container\BYU Programs\Dynamics CRM Error log.Connections[DynamicsCRM]"
                       connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                      connectionManagerRefId="Project.ConnectionManagers[byu]"
                       description="Dynamics CRM Connection Manager"
                       name="DynamicsCRM" />
                   </connections>
@@ -4157,7 +4157,7 @@ WHERE sd.degree_status = 'COMPLETED' AND pcm.PROGRAM_CODE in ('234060', '234062'
                     <connection
                       refId="Package\Program Sequence Container\BYU Programs\Oracle Source For Programs.Connections[MSOraConnection]"
                       connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
+                      connectionManagerRefId="Project.ConnectionManagers[cesprd]"
                       description="The Oracle runtime connection"
                       name="MSOraConnection" />
                   </connections>
@@ -4596,7 +4596,7 @@ WHERE sd.degree_status = 'COMPLETED' AND pcm.PROGRAM_CODE in ('234060', '234062'
                     <connection
                       refId="Package\Program Sequence Container\Transfer Programs\Dynamics CRM Destination Academic Prgs.Connections[DynamicsCRM]"
                       connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                      connectionManagerRefId="Project.ConnectionManagers[byu]"
                       description="Dynamics CRM Connection Manager"
                       name="DynamicsCRM" />
                   </connections>
@@ -5074,7 +5074,7 @@ WHERE sd.degree_status = 'COMPLETED' AND pcm.PROGRAM_CODE in ('234060', '234062'
                     <connection
                       refId="Package\Program Sequence Container\Transfer Programs\Dynamics CRM Destination Error Log.Connections[DynamicsCRM]"
                       connectionManagerID="{A8F9383C-0216-4EAC-8844-C8CDD4BA4BA6}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[byu-dev]"
+                      connectionManagerRefId="Project.ConnectionManagers[byu]"
                       description="Dynamics CRM Connection Manager"
                       name="DynamicsCRM" />
                   </connections>
@@ -5441,7 +5441,7 @@ WHERE std.PERSON_ID IN (
                     <connection
                       refId="Package\Program Sequence Container\Transfer Programs\Oracle Source For Trxfr Programs.Connections[MSOraConnection]"
                       connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
+                      connectionManagerRefId="Project.ConnectionManagers[cesprd]"
                       description="The Oracle runtime connection"
                       name="MSOraConnection" />
                   </connections>

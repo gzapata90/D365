@@ -15,7 +15,7 @@
       <SSIS:Project SSIS:ProtectionLevel="EncryptSensitiveWithUserKey" xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
         <SSIS:Properties>
           <SSIS:Property SSIS:Name="ID">{3d9a9fb1-1182-4153-a793-5c95a6821b29}</SSIS:Property>
-          <SSIS:Property SSIS:Name="Name">CESPRD_D365_ACADEMIC</SSIS:Property>
+          <SSIS:Property SSIS:Name="Name">D365</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
@@ -26,12 +26,14 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">ITB-2216-STU2</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGbqaPNqdtEOXE0F/Y2wnNwAAAAACAAAAAAADZgAAwAAAABAAAAATQEaG2ELGYn+PXKeK/wJMAAAAAASAAACgAAAAEAAAAIsEJ2ORaOQEsrlirHpGeYGIAAAAOymoymh7nvQmoZ7pL2OZAi0mZ3WLMj35DHOPjUytctVQNkJlAByQTxxxvLlrwXL3XaE2oLc3LPRVGHg8eZeMC1vF3Rz+NHtjfEhD3bWHQyh5BQxwtjGaeyL252ZvVaMlFt9E2mDQoZ9/BGBSVtsEIjw4BuF/UShs6a25WTlZbfzr3Yh3BmNrUhQAAAAnVltUq5ZsEO3SOptq6+n10LVY2A==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeAhF7NHH/0OTn+nWssS1sAAAAAACAAAAAAADZgAAwAAAABAAAAAgku5rkT6bfmKmkTbjLt0+AAAAAASAAACgAAAAEAAAACo3597Giad4ZcDsH02UXDKIAAAAdbrq/xzX7w/jppGPsMe5mH0OKaFk9ctMY3BV2uaIWVBm+TYPAg+Bnvwo8u1dnErgsKx7D2z6JBrVp3y4584vmNO2M87K+pobZgEcM3fTW1LAmU46LEq5gcoRDb/z+x10IN/TuKhQw6it5TDpg4Ila8KcaysI2PJ44zy4Qm7HFZ3TSMUBAWs7NBQAAAD0gJptHTxW93WSes2UNNFh8Eo3GQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
-          <SSIS:Package SSIS:Name="AcademicSeedData.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="MBAGradApp_All.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Academic_SD.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Identity_SD.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Identity PERSON.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="byu.conmgr" />
@@ -128,7 +130,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">AuthenticationType=OnlineFederation;ServiceEndpoint=Soap2011;DiscoveryServerUrl=https://disco.crm.dynamics.com;UserName=svc_crm_admin@byu.onmicrosoft.com;Domain=;OrganizationName=byu-stage;CrmServerUrl=https://byu-stage.api.crm.dynamics.com;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">AuthenticationType=OnlineFederation;ServiceEndpoint=Soap2011;DiscoveryServerUrl=https://disco.crm.dynamics.com;UserName=svc_crm_admin@byu.onmicrosoft.com;Domain=;OrganizationName=BYU;CrmServerUrl=https://byu.api.crm.dynamics.com;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -158,7 +160,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">https://byu-stage.api.crm.dynamics.com</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">https://byu.api.crm.dynamics.com</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -250,7 +252,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">byu-stage</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">BYU</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -661,16 +663,16 @@
             </SSIS:Parameter>
           </SSIS:ProjectConnectionParameters>
           <SSIS:PackageInfo>
-            <SSIS:PackageMetaData SSIS:Name="AcademicSeedData.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="MBAGradApp_All.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{FAC68B40-8EE5-47AD-A475-BC2098F4273C}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">AcademicSeedData</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{D04F1001-662B-4516-87AD-4E60E4D7EE7B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">MBAGradApp_All</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">68</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">29</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{2BBAD58D-D7C0-4874-B754-FBCA3C03A8B4}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{AEB38D91-A409-4E6F-B00C-22761A1AE10A}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -678,16 +680,50 @@
               </SSIS:Properties>
               <SSIS:Parameters />
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="MBAGradApp_All.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="Academic_SD.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{D04F1001-662B-4516-87AD-4E60E4D7EE7B}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">MBAGradApp_All</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{3FDCC9C4-620B-4D7C-9C61-9EACBF0FBA5A}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Academic_SD</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">28</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">70</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{32AACF78-B446-42E1-96E4-6657F8BB39DE}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{7418C390-4CE2-4B29-876A-548FE1407564}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="Identity_SD.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{603C7D6C-DC9B-40B5-B1BA-0B43548AB924}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Identity_SD</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">6</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{A1DA9C1B-941F-4559-AA9B-B94DB6AE7436}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="Identity PERSON.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{62354F49-022F-465F-AB56-3ABF64578E61}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Identity PERSON</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{18C578CD-EE5D-4881-958A-226F5924D195}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>

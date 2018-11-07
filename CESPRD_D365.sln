@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "CESPRD_D365_ACADEMIC", "CESPRD_D365_ACADEMIC\CESPRD_D365_ACADEMIC.dtproj", "{D1C3BD4E-E8C0-4963-A294-F785AB2D2431}"
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "D365", "CESPRD_D365_ACADEMIC\D365.dtproj", "{D1C3BD4E-E8C0-4963-A294-F785AB2D2431}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
