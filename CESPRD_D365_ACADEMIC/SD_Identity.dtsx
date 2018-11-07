@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="SRM-CRM"
   DTS:CreatorName="BYU\db656"
-  DTS:DTSID="{603C7D6C-DC9B-40B5-B1BA-0B43548AB924}"
+  DTS:DTSID="{0D84FC84-00D1-4EC6-97D7-915C301A504E}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="14.0.3002.107"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Identity_SD"
+  DTS:ObjectName="SD_Identity"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{A1DA9C1B-941F-4559-AA9B-B94DB6AE7436}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{4C93368D-E28A-40AA-B1A0-16FB63A9F643}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />

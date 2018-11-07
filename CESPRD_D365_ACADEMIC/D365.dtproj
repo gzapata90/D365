@@ -26,14 +26,14 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">ITB-2216-STU2</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeAhF7NHH/0OTn+nWssS1sAAAAAACAAAAAAADZgAAwAAAABAAAAAgku5rkT6bfmKmkTbjLt0+AAAAAASAAACgAAAAEAAAACo3597Giad4ZcDsH02UXDKIAAAAdbrq/xzX7w/jppGPsMe5mH0OKaFk9ctMY3BV2uaIWVBm+TYPAg+Bnvwo8u1dnErgsKx7D2z6JBrVp3y4584vmNO2M87K+pobZgEcM3fTW1LAmU46LEq5gcoRDb/z+x10IN/TuKhQw6it5TDpg4Ila8KcaysI2PJ44zy4Qm7HFZ3TSMUBAWs7NBQAAAD0gJptHTxW93WSes2UNNFh8Eo3GQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeAhF7NHH/0OTn+nWssS1sAAAAAACAAAAAAADZgAAwAAAABAAAAA1LUJ+UeBl7hZhqRGGq9BZAAAAAASAAACgAAAAEAAAAF3zO5EXjyadtxu7f0LLmx6IAAAAUOQyqHXUHVfsyq2T72g4BSC8foqBEP3lFjYX5X7dw06UZX2Q5deGo7sHH1sn67zYaS6xt/CQqpLNNuv/YKFtl9s8SEQEvu4ipiGW/lX0Jko3Or2jqONF22NjgkzFGpWqL9lgEW4XRZILXboj85f7LRu/qgJ/MEKGsTX9Cpmry/3zERy1ngKliBQAAAAlWGXgB36wu8bICjFdJKwwg4Xu4w==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="MBAGradApp_All.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Academic_SD.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Identity_SD.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Identity PERSON.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="SD_Identity.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="SD_Academic.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="byu.conmgr" />
@@ -680,50 +680,50 @@
               </SSIS:Properties>
               <SSIS:Parameters />
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Academic_SD.dtsx">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{3FDCC9C4-620B-4D7C-9C61-9EACBF0FBA5A}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Academic_SD</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">70</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{7418C390-4CE2-4B29-876A-548FE1407564}</SSIS:Property>
-                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
-              </SSIS:Properties>
-              <SSIS:Parameters />
-            </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Identity_SD.dtsx">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{603C7D6C-DC9B-40B5-B1BA-0B43548AB924}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Identity_SD</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">6</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{A1DA9C1B-941F-4559-AA9B-B94DB6AE7436}</SSIS:Property>
-                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
-              </SSIS:Properties>
-              <SSIS:Parameters />
-            </SSIS:PackageMetaData>
             <SSIS:PackageMetaData SSIS:Name="Identity PERSON.dtsx">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">{62354F49-022F-465F-AB56-3ABF64578E61}</SSIS:Property>
                 <SSIS:Property SSIS:Name="Name">Identity PERSON</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">4</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{18C578CD-EE5D-4881-958A-226F5924D195}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{46C5411E-23E3-481E-9143-A28557356F2F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="SD_Identity.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{0D84FC84-00D1-4EC6-97D7-915C301A504E}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">SD_Identity</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">7</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{4C93368D-E28A-40AA-B1A0-16FB63A9F643}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="SD_Academic.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{940E9570-DCA9-4AD4-9286-5E62687E4AFA}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">SD_Academic</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">73</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{B1B1E53E-A156-40B2-8619-C9EADE71D664}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
