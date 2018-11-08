@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MBAGradApp_All"
   DTS:PackageType="5"
-  DTS:VersionBuild="31"
-  DTS:VersionGUID="{A1E5295A-2A5F-4418-A2D3-63CF0E8B6AB1}">
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{F50FA43F-4198-4B00-A3BD-8BDD3D896F4C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -6519,9 +6519,7 @@ ORDER BY p.BYU_ID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6567,9 +6565,7 @@ ORDER BY p.BYU_ID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

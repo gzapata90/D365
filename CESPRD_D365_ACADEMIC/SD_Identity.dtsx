@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SD_Identity"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{4C93368D-E28A-40AA-B1A0-16FB63A9F643}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{448317D8-0170-4C45-8D3E-B7AB911CBE8F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -861,7 +861,18 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   expressionType="Notify"
-                  name="SqlCommand">SELECT DISTINCT CONTINENT_CODE FROM CODE_COUNTRY WHERE CONTINENT_CODE IS NOT NULL</property>
+                  name="SqlCommand">SELECT DISTINCT CONTINENT_CODE, 
+    CASE CONTINENT_CODE
+    WHEN 'AF' THEN 'Africa'
+    WHEN 'AS' THEN 'Asia'
+    WHEN 'AT' THEN 'Antarctica'
+    WHEN 'AU' THEN 'Australia (including Pacific Islands)'
+    WHEN 'EU' THEN 'Europe'
+    WHEN 'NA' THEN 'North America'
+    WHEN 'SA'THEN 'South America'
+    ELSE NULL END AS CONTINENT_DESC
+FROM CODE_COUNTRY
+WHERE CONTINENT_CODE IS NOT NULL</property>
                 <property
                   dataType="System.Int32"
                   description="The number of rows fetched in a batch."
@@ -911,6 +922,14 @@
                       length="2"
                       lineageId="Package\CONTINENT\Oracle Source.Outputs[Oracle Source Output].Columns[CONTINENT_CODE]"
                       name="CONTINENT_CODE" />
+                    <outputColumn
+                      refId="Package\CONTINENT\Oracle Source.Outputs[Oracle Source Output].Columns[CONTINENT_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\CONTINENT\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[CONTINENT_DESC]"
+                      length="37"
+                      lineageId="Package\CONTINENT\Oracle Source.Outputs[Oracle Source Output].Columns[CONTINENT_DESC]"
+                      name="CONTINENT_DESC" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -920,6 +939,12 @@
                       dataType="str"
                       length="2"
                       name="CONTINENT_CODE" />
+                    <externalMetadataColumn
+                      refId="Package\CONTINENT\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[CONTINENT_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="37"
+                      name="CONTINENT_DESC" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -935,6 +960,14 @@
                       length="2"
                       lineageId="Package\CONTINENT\Oracle Source.Outputs[Oracle Source Error Output].Columns[CONTINENT_CODE]"
                       name="CONTINENT_CODE" />
+                    <outputColumn
+                      refId="Package\CONTINENT\Oracle Source.Outputs[Oracle Source Error Output].Columns[CONTINENT_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\CONTINENT\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[CONTINENT_DESC]"
+                      length="37"
+                      lineageId="Package\CONTINENT\Oracle Source.Outputs[Oracle Source Error Output].Columns[CONTINENT_DESC]"
+                      name="CONTINENT_DESC" />
                     <outputColumn
                       refId="Package\CONTINENT\Oracle Source.Outputs[Oracle Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -2676,10 +2709,18 @@
                       refId="Package\ETHNICITY\Dynamics CRM Destination.Inputs[Input].Columns[ETHNICITY_CODE]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="3"
+                      cachedLength="30"
                       cachedName="ETHNICITY_CODE"
                       externalMetadataColumnId="Package\ETHNICITY\Dynamics CRM Destination.Inputs[Input].ExternalColumns[oit_ethnicitycode]"
                       lineageId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Output].Columns[ETHNICITY_CODE]" />
+                    <inputColumn
+                      refId="Package\ETHNICITY\Dynamics CRM Destination.Inputs[Input].Columns[ETHNICITY_DESC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="ETHNICITY_DESC"
+                      externalMetadataColumnId="Package\ETHNICITY\Dynamics CRM Destination.Inputs[Input].ExternalColumns[oit_name]"
+                      lineageId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Output].Columns[ETHNICITY_DESC]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3058,7 +3099,7 @@
                       refId="Package\ETHNICITY\Dynamics Error Log.Inputs[Input].Columns[ETHNICITY_CODE]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="3"
+                      cachedLength="30"
                       cachedName="ETHNICITY_CODE"
                       externalMetadataColumnId="Package\ETHNICITY\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_source_id]"
                       lineageId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Output].Columns[ETHNICITY_CODE]" />
@@ -3322,7 +3363,11 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   expressionType="Notify"
-                  name="SqlCommand">SELECT DISTINCT ETHNICITY_CODE FROM ETHNICITY ORDER BY ETHNICITY_CODE</property>
+                  name="SqlCommand">SELECT DOMAIN_VALUE AS ETHNICITY_CODE, DESCRIPTION AS ETHNICITY_DESC
+FROM CODE_EDIT_VALUE
+WHERE DOMAIN_NAME = 'ETHNICITY_CODE'
+AND ACTIVE_STATUS = 'A'
+ORDER BY DOMAIN_VALUE</property>
                 <property
                   dataType="System.Int32"
                   description="The number of rows fetched in a batch."
@@ -3369,9 +3414,17 @@
                       codePage="1252"
                       dataType="str"
                       externalMetadataColumnId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ETHNICITY_CODE]"
-                      length="3"
+                      length="30"
                       lineageId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Output].Columns[ETHNICITY_CODE]"
                       name="ETHNICITY_CODE" />
+                    <outputColumn
+                      refId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Output].Columns[ETHNICITY_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ETHNICITY_DESC]"
+                      length="30"
+                      lineageId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Output].Columns[ETHNICITY_DESC]"
+                      name="ETHNICITY_DESC" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3379,8 +3432,14 @@
                       refId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ETHNICITY_CODE]"
                       codePage="1252"
                       dataType="str"
-                      length="3"
+                      length="30"
                       name="ETHNICITY_CODE" />
+                    <externalMetadataColumn
+                      refId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ETHNICITY_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="ETHNICITY_DESC" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -3393,9 +3452,17 @@
                       codePage="1252"
                       dataType="str"
                       externalMetadataColumnId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ETHNICITY_CODE]"
-                      length="3"
+                      length="30"
                       lineageId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Error Output].Columns[ETHNICITY_CODE]"
                       name="ETHNICITY_CODE" />
+                    <outputColumn
+                      refId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Error Output].Columns[ETHNICITY_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ETHNICITY_DESC]"
+                      length="30"
+                      lineageId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Error Output].Columns[ETHNICITY_DESC]"
+                      name="ETHNICITY_DESC" />
                     <outputColumn
                       refId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -3632,10 +3699,18 @@
                       refId="Package\LANGUAGE\Dynamics CRM Destination.Inputs[Input].Columns[LANGUAGE_CODE]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="2"
+                      cachedLength="30"
                       cachedName="LANGUAGE_CODE"
                       externalMetadataColumnId="Package\LANGUAGE\Dynamics CRM Destination.Inputs[Input].ExternalColumns[oit_language_code]"
                       lineageId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Output].Columns[LANGUAGE_CODE]" />
+                    <inputColumn
+                      refId="Package\LANGUAGE\Dynamics CRM Destination.Inputs[Input].Columns[LANGUAGE_DESC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="LANGUAGE_DESC"
+                      externalMetadataColumnId="Package\LANGUAGE\Dynamics CRM Destination.Inputs[Input].ExternalColumns[oit_name]"
+                      lineageId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Output].Columns[LANGUAGE_DESC]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4001,7 +4076,7 @@
                       refId="Package\LANGUAGE\Dynamics Error Log.Inputs[Input].Columns[LANGUAGE_CODE]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="2"
+                      cachedLength="30"
                       cachedName="LANGUAGE_CODE"
                       externalMetadataColumnId="Package\LANGUAGE\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_source_id]"
                       lineageId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Output].Columns[LANGUAGE_CODE]" />
@@ -4278,7 +4353,11 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   expressionType="Notify"
-                  name="SqlCommand">SELECT DISTINCT LANGUAGE_CODE FROM LANGUAGE</property>
+                  name="SqlCommand">SELECT DOMAIN_VALUE AS LANGUAGE_CODE, DESCRIPTION AS LANGUAGE_DESC
+FROM CODE_EDIT_VALUE
+WHERE DOMAIN_NAME = 'LANGUAGE'
+AND ACTIVE_STATUS = 'A'
+ORDER BY DOMAIN_VALUE</property>
                 <property
                   dataType="System.Int32"
                   description="The number of rows fetched in a batch."
@@ -4325,9 +4404,17 @@
                       codePage="1252"
                       dataType="str"
                       externalMetadataColumnId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[LANGUAGE_CODE]"
-                      length="2"
+                      length="30"
                       lineageId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Output].Columns[LANGUAGE_CODE]"
                       name="LANGUAGE_CODE" />
+                    <outputColumn
+                      refId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Output].Columns[LANGUAGE_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[LANGUAGE_DESC]"
+                      length="30"
+                      lineageId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Output].Columns[LANGUAGE_DESC]"
+                      name="LANGUAGE_DESC" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4335,8 +4422,14 @@
                       refId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[LANGUAGE_CODE]"
                       codePage="1252"
                       dataType="str"
-                      length="2"
+                      length="30"
                       name="LANGUAGE_CODE" />
+                    <externalMetadataColumn
+                      refId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[LANGUAGE_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="LANGUAGE_DESC" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -4349,9 +4442,17 @@
                       codePage="1252"
                       dataType="str"
                       externalMetadataColumnId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[LANGUAGE_CODE]"
-                      length="2"
+                      length="30"
                       lineageId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Error Output].Columns[LANGUAGE_CODE]"
                       name="LANGUAGE_CODE" />
+                    <outputColumn
+                      refId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Error Output].Columns[LANGUAGE_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[LANGUAGE_DESC]"
+                      length="30"
+                      lineageId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Error Output].Columns[LANGUAGE_DESC]"
+                      name="LANGUAGE_DESC" />
                     <outputColumn
                       refId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -4592,6 +4693,14 @@
                       cachedName="RELIGION_CODE"
                       externalMetadataColumnId="Package\RELIGION\Dynamics CRM Destination.Inputs[Input].ExternalColumns[oit_religioncode]"
                       lineageId="Package\RELIGION\Oracle Source.Outputs[Oracle Source Output].Columns[RELIGION_CODE]" />
+                    <inputColumn
+                      refId="Package\RELIGION\Dynamics CRM Destination.Inputs[Input].Columns[RELIGION_DESC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="RELIGION_DESC"
+                      externalMetadataColumnId="Package\RELIGION\Dynamics CRM Destination.Inputs[Input].ExternalColumns[oit_name]"
+                      lineageId="Package\RELIGION\Oracle Source.Outputs[Oracle Source Output].Columns[RELIGION_DESC]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -5234,7 +5343,9 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   expressionType="Notify"
-                  name="SqlCommand">SELECT DISTINCT RELIGION_CODE FROM PERSON ORDER BY RELIGION_CODE</property>
+                  name="SqlCommand">SELECT DISTINCT RELIGION_CODE, RELIGION AS RELIGION_DESC
+FROM CODE_RELIGION
+ORDER BY RELIGION_CODE</property>
                 <property
                   dataType="System.Int32"
                   description="The number of rows fetched in a batch."
@@ -5284,6 +5395,14 @@
                       length="3"
                       lineageId="Package\RELIGION\Oracle Source.Outputs[Oracle Source Output].Columns[RELIGION_CODE]"
                       name="RELIGION_CODE" />
+                    <outputColumn
+                      refId="Package\RELIGION\Oracle Source.Outputs[Oracle Source Output].Columns[RELIGION_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\RELIGION\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[RELIGION_DESC]"
+                      length="30"
+                      lineageId="Package\RELIGION\Oracle Source.Outputs[Oracle Source Output].Columns[RELIGION_DESC]"
+                      name="RELIGION_DESC" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -5293,6 +5412,12 @@
                       dataType="str"
                       length="3"
                       name="RELIGION_CODE" />
+                    <externalMetadataColumn
+                      refId="Package\RELIGION\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[RELIGION_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="RELIGION_DESC" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -5308,6 +5433,14 @@
                       length="3"
                       lineageId="Package\RELIGION\Oracle Source.Outputs[Oracle Source Error Output].Columns[RELIGION_CODE]"
                       name="RELIGION_CODE" />
+                    <outputColumn
+                      refId="Package\RELIGION\Oracle Source.Outputs[Oracle Source Error Output].Columns[RELIGION_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\RELIGION\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[RELIGION_DESC]"
+                      length="30"
+                      lineageId="Package\RELIGION\Oracle Source.Outputs[Oracle Source Error Output].Columns[RELIGION_DESC]"
+                      name="RELIGION_DESC" />
                     <outputColumn
                       refId="Package\RELIGION\Oracle Source.Outputs[Oracle Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -6209,7 +6342,10 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   expressionType="Notify"
-                  name="SqlCommand">SELECT DISTINCT VISA_TYPE FROM PERSON WHERE VISA_TYPE IS NOT NULL ORDER BY VISA_TYPE</property>
+                  name="SqlCommand">SELECT DISTINCT VISA_TYPE 
+FROM PERSON 
+WHERE VISA_TYPE IS NOT NULL 
+ORDER BY VISA_TYPE</property>
                 <property
                   dataType="System.Int32"
                   description="The number of rows fetched in a batch."
@@ -6351,7 +6487,7 @@
         <NodeLayout
           Size="126,42"
           Id="Package\COUNTRY"
-          TopLeft="96,124" />
+          TopLeft="89,124" />
         <NodeLayout
           Size="131,42"
           Id="Package\LANGUAGE"
@@ -6370,7 +6506,7 @@
           TopLeft="270,271" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="156.25,85">
+          TopLeft="152.75,85">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6583,10 +6719,6 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="144,42"
-          Id="Package\LANGUAGE\Oracle Source"
-          TopLeft="67,26" />
-        <NodeLayout
           Size="205,42"
           Id="Package\LANGUAGE\Dynamics CRM Destination"
           TopLeft="44,166" />
@@ -6598,28 +6730,6 @@
           Size="154,42"
           Id="Package\LANGUAGE\Derived Column"
           TopLeft="67,95" />
-        <EdgeLayout
-          Id="Package\LANGUAGE.Paths[Oracle Source Output]"
-          TopLeft="141.5,68">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,27"
-              Start="0,0"
-              End="0,19.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\LANGUAGE.Paths[Derived Column Output]"
           TopLeft="145.25,137">
@@ -6666,6 +6776,32 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="144,42"
+          Id="Package\LANGUAGE\Oracle Source"
+          TopLeft="73,21" />
+        <EdgeLayout
+          Id="Package\LANGUAGE.Paths[Oracle Source Output]"
+          TopLeft="144.5,63">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32"
+              Start="0,0"
+              End="0,24.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -6674,10 +6810,6 @@
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="144,42"
-          Id="Package\ETHNICITY\Oracle Source"
-          TopLeft="76,28" />
         <NodeLayout
           Size="154,42"
           Id="Package\ETHNICITY\Derived Column"
@@ -6690,28 +6822,6 @@
           Size="171,42"
           Id="Package\ETHNICITY\Dynamics Error Log"
           TopLeft="69,253" />
-        <EdgeLayout
-          Id="Package\ETHNICITY.Paths[Oracle Source Output]"
-          TopLeft="148.5,70">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,29"
-              Start="0,0"
-              End="0,21.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\ETHNICITY.Paths[Derived Column Output]"
           TopLeft="149.75,141">
@@ -6758,33 +6868,13 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\RELIGION">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="144,42"
-          Id="Package\RELIGION\Oracle Source"
-          TopLeft="59,24" />
-        <NodeLayout
-          Size="205,42"
-          Id="Package\RELIGION\Dynamics CRM Destination"
-          TopLeft="36,176" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\RELIGION\Dynamics Error Log"
-          TopLeft="55,267" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\RELIGION\Derived Column"
-          TopLeft="56,105" />
+          Id="Package\ETHNICITY\Oracle Source"
+          TopLeft="78,18" />
         <EdgeLayout
-          Id="Package\RELIGION.Paths[Oracle Source Output]"
-          TopLeft="132,66">
+          Id="Package\ETHNICITY.Paths[Oracle Source Output]"
+          TopLeft="149.5,60">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6804,6 +6894,26 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\RELIGION">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="205,42"
+          Id="Package\RELIGION\Dynamics CRM Destination"
+          TopLeft="36,176" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\RELIGION\Dynamics Error Log"
+          TopLeft="55,267" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\RELIGION\Derived Column"
+          TopLeft="56,105" />
         <EdgeLayout
           Id="Package\RELIGION.Paths[Derived Column Output]"
           TopLeft="135.75,147">
@@ -6848,6 +6958,32 @@
             <mssgm:EdgeLabel
               BoundingBox="-28.33638671875,15.033203125,56.6727734375,11.43359375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="144,42"
+          Id="Package\RELIGION\Oracle Source"
+          TopLeft="66,25" />
+        <EdgeLayout
+          Id="Package\RELIGION.Paths[Oracle Source Output]"
+          TopLeft="135.5,67">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38"
+              Start="0,0"
+              End="0,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
