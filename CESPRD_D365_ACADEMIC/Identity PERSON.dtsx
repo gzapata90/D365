@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Identity PERSON"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{B0C709B9-5144-48B9-9D3A-284DEAF31B76}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{52580695-3408-4942-B425-5CC16B64D027}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -253,7 +253,7 @@
                   description="Specify what action will be taken when multiple matches are found with Upsert action."
                   expressionType="Notify"
                   name="HandlingOfMultipleMatches"
-                  typeConverter="KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
+                  typeConverter="KingswaySoft.IntegrationToolkit.Common.DescriptiveEnumTypeConverter`1[[KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
                 <property
                   dataType="System.String"
                   description="Workflow to be executed."
@@ -4824,8 +4824,8 @@ FROM PERSON</property>
               <connections>
                 <connection
                   refId="Package\CONTACT\Oracle Source.Connections[MSOraConnection]"
-                  connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[cesprd]"
+                  connectionManagerID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
                   description="The Oracle runtime connection"
                   name="MSOraConnection" />
               </connections>
@@ -5387,7 +5387,7 @@ FROM PERSON</property>
                       description="Specify what action will be taken when multiple matches are found with Upsert action."
                       expressionType="Notify"
                       name="HandlingOfMultipleMatches"
-                      typeConverter="KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
+                      typeConverter="KingswaySoft.IntegrationToolkit.Common.DescriptiveEnumTypeConverter`1[[KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
                     <property
                       dataType="System.String"
                       description="Workflow to be executed."
@@ -9967,8 +9967,8 @@ ORDER BY p.BYU_ID</property>
                   <connections>
                     <connection
                       refId="Package\Sequence Container\CONTACT ADDRESS\Oracle Source.Connections[MSOraConnection]"
-                      connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[cesprd]"
+                      connectionManagerID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
                       description="The Oracle runtime connection"
                       name="MSOraConnection" />
                   </connections>
@@ -10657,7 +10657,7 @@ ORDER BY p.BYU_ID</property>
                       description="Specify what action will be taken when multiple matches are found with Upsert action."
                       expressionType="Notify"
                       name="HandlingOfMultipleMatches"
-                      typeConverter="KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
+                      typeConverter="KingswaySoft.IntegrationToolkit.Common.DescriptiveEnumTypeConverter`1[[KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
                     <property
                       dataType="System.String"
                       description="Workflow to be executed."
@@ -15084,8 +15084,8 @@ ORDER BY p.byu_id</property>
                   <connections>
                     <connection
                       refId="Package\Sequence Container\CONTACT EMAIL\Oracle Source.Connections[MSOraConnection]"
-                      connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[cesprd]"
+                      connectionManagerID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
                       description="The Oracle runtime connection"
                       name="MSOraConnection" />
                   </connections>
@@ -15404,7 +15404,7 @@ ORDER BY p.byu_id</property>
                       description="Specify what action will be taken when multiple matches are found with Upsert action."
                       expressionType="Notify"
                       name="HandlingOfMultipleMatches"
-                      typeConverter="KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
+                      typeConverter="KingswaySoft.IntegrationToolkit.Common.DescriptiveEnumTypeConverter`1[[KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
                     <property
                       dataType="System.String"
                       description="Workflow to be executed."
@@ -16219,8 +16219,8 @@ ORDER BY p.byu_id</property>
                   <connections>
                     <connection
                       refId="Package\Sequence Container\CONTACT ETHNICITY\Oracle Source.Connections[MSOraConnection]"
-                      connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[cesprd]"
+                      connectionManagerID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
                       description="The Oracle runtime connection"
                       name="MSOraConnection" />
                   </connections>
@@ -16536,7 +16536,7 @@ ORDER BY p.byu_id</property>
                       description="Specify what action will be taken when multiple matches are found with Upsert action."
                       expressionType="Notify"
                       name="HandlingOfMultipleMatches"
-                      typeConverter="KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
+                      typeConverter="KingswaySoft.IntegrationToolkit.Common.DescriptiveEnumTypeConverter`1[[KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
                     <property
                       dataType="System.String"
                       description="Workflow to be executed."
@@ -17498,8 +17498,8 @@ ORDER BY p.byu_id</property>
                   <connections>
                     <connection
                       refId="Package\Sequence Container\CONTACT LANUGUAGE\Oracle Source.Connections[MSOraConnection]"
-                      connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[cesprd]"
+                      connectionManagerID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
                       description="The Oracle runtime connection"
                       name="MSOraConnection" />
                   </connections>
@@ -17947,7 +17947,7 @@ ORDER BY p.byu_id</property>
                       description="Specify what action will be taken when multiple matches are found with Upsert action."
                       expressionType="Notify"
                       name="HandlingOfMultipleMatches"
-                      typeConverter="KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
+                      typeConverter="KingswaySoft.IntegrationToolkit.Common.DescriptiveEnumTypeConverter`1[[KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
                     <property
                       dataType="System.String"
                       description="Workflow to be executed."
@@ -22385,8 +22385,8 @@ ORDER BY p.byu_id</property>
                   <connections>
                     <connection
                       refId="Package\Sequence Container\CONTACT PHONE\Oracle Source.Connections[MSOraConnection]"
-                      connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[cesprd]"
+                      connectionManagerID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
                       description="The Oracle runtime connection"
                       name="MSOraConnection" />
                   </connections>
@@ -22589,42 +22589,42 @@ ORDER BY p.byu_id</property>
           Id="Package\Sequence Container\CONTACT ADDRESS"
           TopLeft="53,13" />
         <NodeLayout
-          Size="162,42"
-          Id="Package\Sequence Container\CONTACT PHONE"
-          TopLeft="60,65" />
-        <NodeLayout
           Size="159,42"
           Id="Package\Sequence Container\CONTACT EMAIL"
-          TopLeft="62,120" />
-        <NodeLayout
-          Size="188,42"
-          Id="Package\Sequence Container\CONTACT LANUGUAGE"
-          TopLeft="53,170" />
+          TopLeft="62,163" />
         <NodeLayout
           Size="182,42"
           Id="Package\Sequence Container\CONTACT ETHNICITY"
-          TopLeft="56,218" />
+          TopLeft="51,325" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Sequence Container\CONTACT LANUGUAGE"
+          TopLeft="48,240" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\Sequence Container\CONTACT PHONE"
+          TopLeft="61,90" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="287,293"
-          Size="287,336"
+          PanelSize="287,422"
+          Size="287,465"
           Id="Package\Sequence Container"
-          TopLeft="22,92" />
+          TopLeft="28,118" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="166.5,67">
+          TopLeft="169.5,67">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,25"
+              EndConnector="0,51"
               Start="0,0"
-              End="0,17.5">
+              End="0,43.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.5" />
+                    End="0,43.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22642,31 +22642,35 @@ ORDER BY p.byu_id</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="144,42"
+          Id="Package\CONTACT\Oracle Source"
+          TopLeft="51,17" />
+        <NodeLayout
           Size="154,42"
           Id="Package\CONTACT\Derived Column"
-          TopLeft="50,97" />
+          TopLeft="47,110" />
         <NodeLayout
           Size="205,42"
           Id="Package\CONTACT\Dynamics CRM Destination"
-          TopLeft="27,172" />
+          TopLeft="26,208" />
         <NodeLayout
           Size="171,42"
           Id="Package\CONTACT\Dynamics Error Log"
-          TopLeft="46,265" />
+          TopLeft="45,301" />
         <EdgeLayout
-          Id="Package\CONTACT.Paths[Derived Column Output]"
-          TopLeft="128.25,139">
+          Id="Package\CONTACT.Paths[Oracle Source Output]"
+          TopLeft="123.5,59">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,33"
+              EndConnector="0,51"
               Start="0,0"
-              End="0,25.5">
+              End="0,43.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.5" />
+                    End="0,43.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22677,7 +22681,7 @@ ORDER BY p.byu_id</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CONTACT.Paths[Error Output]"
-          TopLeft="130.5,214">
+          TopLeft="129.5,250">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -22699,24 +22703,20 @@ ORDER BY p.byu_id</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="144,42"
-          Id="Package\CONTACT\Oracle Source"
-          TopLeft="51,17" />
         <EdgeLayout
-          Id="Package\CONTACT.Paths[Oracle Source Output]"
-          TopLeft="125,59">
+          Id="Package\CONTACT.Paths[Derived Column Output]"
+          TopLeft="126.25,152">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,38"
+              EndConnector="0,56"
               Start="0,0"
-              End="0,30.5">
+              End="0,48.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.5" />
+                    End="0,48.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22734,179 +22734,87 @@ ORDER BY p.byu_id</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="144,42"
-          Id="Package\Sequence Container\CONTACT ADDRESS\Oracle Source"
-          TopLeft="150,37" />
-        <NodeLayout
           Size="255,42"
           Id="Package\Sequence Container\CONTACT ADDRESS\Dynamics CRM Destination CONTACT"
-          TopLeft="96,179" />
+          TopLeft="99,230" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Sequence Container\CONTACT ADDRESS\Oracle Source"
+          TopLeft="156,47" />
         <NodeLayout
           Size="154,42"
           Id="Package\Sequence Container\CONTACT ADDRESS\Derived Column"
-          TopLeft="146,106" />
+          TopLeft="147,132" />
+        <NodeLayout
+          Size="196,42"
+          Id="Package\Sequence Container\CONTACT ADDRESS\Dynamics CRM Error Log"
+          TopLeft="123,340" />
         <EdgeLayout
           Id="Package\Sequence Container\CONTACT ADDRESS.Paths[Oracle Source Output]"
-          TopLeft="222.5,79">
+          TopLeft="226,89">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,27"
+              EndConnector="0,43"
               Start="0,0"
-              End="0,19.5">
+              End="0,35.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.5" />
+                    End="0,35.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\CONTACT ADDRESS.Paths[Error Output]"
+          TopLeft="223.75,272">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,68"
+              Start="0,0"
+              End="0,60.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-28.33638671875,24.533203125,56.6727734375,11.43359375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\CONTACT ADDRESS.Paths[Derived Column Output]"
-          TopLeft="223.25,148">
+          TopLeft="225.25,174">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,31"
+              EndConnector="0,56"
               Start="0,0"
-              End="0,23.5">
+              End="0,48.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,23.5" />
+                    End="0,48.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="196,42"
-          Id="Package\Sequence Container\CONTACT ADDRESS\Dynamics CRM Error Log"
-          TopLeft="123,269" />
-        <EdgeLayout
-          Id="Package\Sequence Container\CONTACT ADDRESS.Paths[Error Output]"
-          TopLeft="222.25,221">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,48"
-              Start="0,0"
-              End="0,40.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-28.33638671875,14.533203125,56.6727734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Sequence Container\CONTACT PHONE">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="144,42"
-          Id="Package\Sequence Container\CONTACT PHONE\Oracle Source"
-          TopLeft="109,36" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Sequence Container\CONTACT PHONE\Derived Column"
-          TopLeft="108,110" />
-        <NodeLayout
-          Size="205,42"
-          Id="Package\Sequence Container\CONTACT PHONE\Dynamics CRM Destination"
-          TopLeft="82,187" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Sequence Container\CONTACT PHONE\Dynamics Error Log"
-          TopLeft="98,279" />
-        <EdgeLayout
-          Id="Package\Sequence Container\CONTACT PHONE.Paths[Oracle Source Output]"
-          TopLeft="183,78">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,32"
-              Start="0,0"
-              End="0,24.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\CONTACT PHONE.Paths[Derived Column Output]"
-          TopLeft="184.75,152">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,35"
-              Start="0,0"
-              End="0,27.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\CONTACT PHONE.Paths[Error Output]"
-          TopLeft="184,229">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,50"
-              Start="0,0"
-              End="0,42.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,42.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-28.33638671875,15.533203125,56.6727734375,11.43359375"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22922,10 +22830,6 @@ ORDER BY p.byu_id</property>
           Id="Package\Sequence Container\CONTACT EMAIL\Oracle Source"
           TopLeft="109,45" />
         <NodeLayout
-          Size="154,42"
-          Id="Package\Sequence Container\CONTACT EMAIL\Derived Column"
-          TopLeft="107,120" />
-        <NodeLayout
           Size="205,42"
           Id="Package\Sequence Container\CONTACT EMAIL\Dynamics CRM Destination"
           TopLeft="85,196" />
@@ -22933,28 +22837,10 @@ ORDER BY p.byu_id</property>
           Size="171,42"
           Id="Package\Sequence Container\CONTACT EMAIL\Dynamics Error Log"
           TopLeft="109,285" />
-        <EdgeLayout
-          Id="Package\Sequence Container\CONTACT EMAIL.Paths[Oracle Source Output]"
-          TopLeft="182.5,87">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,33"
-              Start="0,0"
-              End="0,25.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Sequence Container\CONTACT EMAIL\Derived Column"
+          TopLeft="107,120" />
         <EdgeLayout
           Id="Package\Sequence Container\CONTACT EMAIL.Paths[Derived Column Output]"
           TopLeft="185.75,162">
@@ -22969,6 +22855,28 @@ ORDER BY p.byu_id</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,26.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\CONTACT EMAIL.Paths[Oracle Source Output]"
+          TopLeft="182.5,87">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33"
+              Start="0,0"
+              End="0,25.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23005,6 +22913,98 @@ ORDER BY p.byu_id</property>
     </LayoutInfo>
   </TaskHost>
   <TaskHost
+    design-time-name="Package\Sequence Container\CONTACT ETHNICITY">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="205,42"
+          Id="Package\Sequence Container\CONTACT ETHNICITY\Dynamics CRM Destination"
+          TopLeft="37,174" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Sequence Container\CONTACT ETHNICITY\Oracle Source"
+          TopLeft="62,24" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Sequence Container\CONTACT ETHNICITY\Derived Column"
+          TopLeft="63,97" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Sequence Container\CONTACT ETHNICITY\Dynamics Error Log"
+          TopLeft="52,261" />
+        <EdgeLayout
+          Id="Package\Sequence Container\CONTACT ETHNICITY.Paths[Oracle Source Output]"
+          TopLeft="137,66">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31"
+              Start="0,0"
+              End="0,23.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\CONTACT ETHNICITY.Paths[Error Output]"
+          TopLeft="138.5,216">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45"
+              Start="0,0"
+              End="0,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-28.33638671875,13.033203125,56.6727734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\CONTACT ETHNICITY.Paths[Derived Column Output]"
+          TopLeft="139.75,139">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35"
+              Start="0,0"
+              End="0,27.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
     design-time-name="Package\Sequence Container\CONTACT LANUGUAGE">
     <LayoutInfo>
       <GraphLayout
@@ -23014,10 +23014,6 @@ ORDER BY p.byu_id</property>
           Id="Package\Sequence Container\CONTACT LANUGUAGE\Oracle Source"
           TopLeft="100,27" />
         <NodeLayout
-          Size="154,42"
-          Id="Package\Sequence Container\CONTACT LANUGUAGE\Derived Column"
-          TopLeft="98,103" />
-        <NodeLayout
           Size="205,42"
           Id="Package\Sequence Container\CONTACT LANUGUAGE\Dynamics CRM Destination"
           TopLeft="75,183" />
@@ -23025,6 +23021,10 @@ ORDER BY p.byu_id</property>
           Size="171,42"
           Id="Package\Sequence Container\CONTACT LANUGUAGE\Dynamics Error Log"
           TopLeft="94,268" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Sequence Container\CONTACT LANUGUAGE\Derived Column"
+          TopLeft="98,103" />
         <EdgeLayout
           Id="Package\Sequence Container\CONTACT LANUGUAGE.Paths[Oracle Source Output]"
           TopLeft="173.5,69">
@@ -23039,28 +23039,6 @@ ORDER BY p.byu_id</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,26.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\CONTACT LANUGUAGE.Paths[Derived Column Output]"
-          TopLeft="176.25,145">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,38"
-              Start="0,0"
-              End="0,30.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23093,44 +23071,20 @@ ORDER BY p.byu_id</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Sequence Container\CONTACT ETHNICITY">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="205,42"
-          Id="Package\Sequence Container\CONTACT ETHNICITY\Dynamics CRM Destination"
-          TopLeft="37,174" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Sequence Container\CONTACT ETHNICITY\Dynamics Error Log"
-          TopLeft="52,261" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Sequence Container\CONTACT ETHNICITY\Derived Column"
-          TopLeft="63,97" />
-        <NodeLayout
-          Size="144,42"
-          Id="Package\Sequence Container\CONTACT ETHNICITY\Oracle Source"
-          TopLeft="62,24" />
         <EdgeLayout
-          Id="Package\Sequence Container\CONTACT ETHNICITY.Paths[Oracle Source Output]"
-          TopLeft="137,66">
+          Id="Package\Sequence Container\CONTACT LANUGUAGE.Paths[Derived Column Output]"
+          TopLeft="176.25,145">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,31"
+              EndConnector="0,38"
               Start="0,0"
-              End="0,23.5">
+              End="0,30.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,23.5" />
+                    End="0,30.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23139,9 +23093,33 @@ ORDER BY p.byu_id</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Sequence Container\CONTACT PHONE">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Sequence Container\CONTACT PHONE\Oracle Source"
+          TopLeft="109,36" />
+        <NodeLayout
+          Size="205,42"
+          Id="Package\Sequence Container\CONTACT PHONE\Dynamics CRM Destination"
+          TopLeft="82,187" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Sequence Container\CONTACT PHONE\Dynamics Error Log"
+          TopLeft="98,279" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Sequence Container\CONTACT PHONE\Derived Column"
+          TopLeft="108,110" />
         <EdgeLayout
-          Id="Package\Sequence Container\CONTACT ETHNICITY.Paths[Derived Column Output]"
-          TopLeft="139.75,139">
+          Id="Package\Sequence Container\CONTACT PHONE.Paths[Derived Column Output]"
+          TopLeft="184.75,152">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -23162,26 +23140,48 @@ ORDER BY p.byu_id</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Sequence Container\CONTACT ETHNICITY.Paths[Error Output]"
-          TopLeft="138.5,216">
+          Id="Package\Sequence Container\CONTACT PHONE.Paths[Oracle Source Output]"
+          TopLeft="183,78">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45"
+              EndConnector="0,32"
               Start="0,0"
-              End="0,37.5">
+              End="0,24.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.5" />
+                    End="0,24.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\CONTACT PHONE.Paths[Error Output]"
+          TopLeft="184,229">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50"
+              Start="0,0"
+              End="0,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-28.33638671875,13.033203125,56.6727734375,11.43359375"
+              BoundingBox="-28.33638671875,15.533203125,56.6727734375,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

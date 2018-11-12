@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="CESPRD"
+  DTS:DTSID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}"
+  DTS:CreationName="MSORA">
+  <DTS:ObjectData>
+    <OracleXMLPackage>
+      <OraConnectionString>SERVER=cesprd;USERNAME=oit#db656;ORACLEHOME=;ORACLEHOME64=;WINAUTH=0</OraConnectionString>
+      <OraRetain>False</OraRetain>
+      <OraInitialCatalog></OraInitialCatalog>
+      <OraServerName>cesprd</OraServerName>
+      <OraUserName>oit#db656</OraUserName>
+      <OraOracleHome></OraOracleHome>
+      <OraOracleHome64></OraOracleHome64>
+      <OraWinAuthentication>False</OraWinAuthentication>
+      <OraEnableDetailedTracing>False</OraEnableDetailedTracing>
+      <OraPassword
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeAhF7NHH/0OTn+nWssS1sAAAAAACAAAAAAADZgAAwAAAABAAAAASiI9nFD/Cu50Xr7AD1qoCAAAAAASAAACgAAAAEAAAAE31H5ggWnC19QE2UB1NC49AAAAAn7LutAG+hfuz0oq88gkP7daRAkYmD3fTf+LLHJukk18MnlQr/zzw80Qdkxbhjqjt9wzG/SzLddCN2eLkT+29JxQAAAAKJ23PsE7RIYImSCkM7I2JwbnHQA==</OraPassword>
+    </OracleXMLPackage>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

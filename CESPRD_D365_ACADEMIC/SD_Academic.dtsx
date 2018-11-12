@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SD_Academic"
   DTS:PackageType="5"
-  DTS:VersionBuild="73"
-  DTS:VersionGUID="{B1B1E53E-A156-40B2-8619-C9EADE71D664}">
+  DTS:VersionBuild="76"
+  DTS:VersionGUID="{F7349B10-30FD-4508-B5E5-D480A64B7977}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -945,8 +945,8 @@ WHERE std.PERSON_ID IN (
               <connections>
                 <connection
                   refId="Package\ACADEMIC UNITS\Oracle Source  For Acd Units.Connections[MSOraConnection]"
-                  connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[cesprd]"
+                  connectionManagerID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
                   description="The Oracle runtime connection"
                   name="MSOraConnection" />
               </connections>
@@ -2134,8 +2134,8 @@ WHERE sd.degree_status = 'COMPLETED' AND pcm.PROGRAM_CODE in ('234060', '234062'
               <connections>
                 <connection
                   refId="Package\BYU PROGRAMS\Oracle Source For Programs.Connections[MSOraConnection]"
-                  connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[cesprd]"
+                  connectionManagerID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
                   description="The Oracle runtime connection"
                   name="MSOraConnection" />
               </connections>
@@ -2957,12 +2957,6 @@ WHERE sd.degree_status = 'COMPLETED' AND pcm.PROGRAM_CODE in ('234060', '234062'
                   name="Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DEGREE TYPES\Dynamics CRM Destination 1.Inputs[Input].Columns[ErrorColumn]"
-                      cachedDataType="i4"
-                      cachedName="ErrorColumn"
-                      externalMetadataColumnId="Package\DEGREE TYPES\Dynamics CRM Destination 1.Inputs[Input].ExternalColumns[oit_errorcolumn]"
-                      lineageId="Package\DEGREE TYPES\Dynamics CRM Destination.Outputs[Error Output].Columns[ErrorColumn]" />
-                    <inputColumn
                       refId="Package\DEGREE TYPES\Dynamics CRM Destination 1.Inputs[Input].Columns[CrmErrorMessage]"
                       cachedDataType="wstr"
                       cachedLength="2048"
@@ -3319,8 +3313,8 @@ WHERE std.PERSON_ID IN (
               <connections>
                 <connection
                   refId="Package\DEGREE TYPES\Oracle Source.Connections[MSOraConnection]"
-                  connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[cesprd]"
+                  connectionManagerID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
                   description="The Oracle runtime connection"
                   name="MSOraConnection" />
               </connections>
@@ -4322,8 +4316,8 @@ WHERE std.PERSON_ID IN (
               <connections>
                 <connection
                   refId="Package\INSTITUTIONS\Oracle Source For Institutions.Connections[MSOraConnection]"
-                  connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[cesprd]"
+                  connectionManagerID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
                   description="The Oracle runtime connection"
                   name="MSOraConnection" />
               </connections>
@@ -4446,11 +4440,15 @@ WHERE std.PERSON_ID IN (
         <NodeLayout
           Size="164,42"
           Id="Package\ACADEMIC UNITS"
-          TopLeft="48.171433349531,168.729415067917" />
+          TopLeft="48.171433349531,183.729415067917" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\BYU PROGRAMS"
+          TopLeft="50,260" />
         <NodeLayout
           Size="151,42"
           Id="Package\DEGREE TYPES"
-          TopLeft="54,317" />
+          TopLeft="54,346" />
         <NodeLayout
           Size="150,42"
           Id="Package\INSTITUTIONS"
@@ -4461,14 +4459,14 @@ WHERE std.PERSON_ID IN (
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,22.611764714462"
+              EndConnector="0,37.611764714462"
               Start="0,0"
-              End="0,15.111764714462">
+              End="0,30.111764714462">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.111764714462" />
+                    End="0,30.111764714462" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4477,24 +4475,20 @@ WHERE std.PERSON_ID IN (
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="156,42"
-          Id="Package\BYU PROGRAMS"
-          TopLeft="52,244" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="130.085716674765,210.729415067917">
+          TopLeft="129.085716674766,225.729415067917">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,33.270584932083"
+              EndConnector="0,34.270584932083"
               Start="0,0"
-              End="0,25.770584932083">
+              End="0,26.770584932083">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.770584932083" />
+                    End="0,26.770584932083" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4505,18 +4499,18 @@ WHERE std.PERSON_ID IN (
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="129.75,286">
+          TopLeft="128.75,302">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,31"
+              EndConnector="0,44"
               Start="0,0"
-              End="0,23.5">
+              End="0,36.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,23.5" />
+                    End="0,36.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4609,6 +4603,98 @@ WHERE std.PERSON_ID IN (
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,41.3" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\BYU PROGRAMS">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="211,42"
+          Id="Package\BYU PROGRAMS\Oracle Source For Programs"
+          TopLeft="98,36" />
+        <NodeLayout
+          Size="275,42"
+          Id="Package\BYU PROGRAMS\Dynamics CRM Destination BYU Programs"
+          TopLeft="57.4000000000001,258.6" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\BYU PROGRAMS\Dynamics CRM Error log"
+          TopLeft="103,380" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\BYU PROGRAMS\Derived Column"
+          TopLeft="120,147" />
+        <EdgeLayout
+          Id="Package\BYU PROGRAMS.Paths[Oracle Source Output]"
+          TopLeft="200.25,78">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,69"
+              Start="0,0"
+              End="0,61.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,61.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\BYU PROGRAMS.Paths[Error Output]"
+          TopLeft="197.2,300.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,79.4"
+              Start="0,0"
+              End="0,71.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,71.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-28.33638671875,30.233203125,56.6727734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\BYU PROGRAMS.Paths[Derived Column Output]"
+          TopLeft="195.95,189">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,69.6"
+              Start="0,0"
+              End="0,62.1">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62.1" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4814,97 +4900,5 @@ WHERE std.PERSON_ID IN (
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\BYU PROGRAMS">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="211,42"
-          Id="Package\BYU PROGRAMS\Oracle Source For Programs"
-          TopLeft="98,36" />
-        <NodeLayout
-          Size="275,42"
-          Id="Package\BYU PROGRAMS\Dynamics CRM Destination BYU Programs"
-          TopLeft="57.4000000000001,258.6" />
-        <NodeLayout
-          Size="193,42"
-          Id="Package\BYU PROGRAMS\Dynamics CRM Error log"
-          TopLeft="103,380" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\BYU PROGRAMS\Derived Column"
-          TopLeft="120,147" />
-        <EdgeLayout
-          Id="Package\BYU PROGRAMS.Paths[Oracle Source Output]"
-          TopLeft="200.25,78">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,69"
-              Start="0,0"
-              End="0,61.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,61.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\BYU PROGRAMS.Paths[Error Output]"
-          TopLeft="197.2,300.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,79.4"
-              Start="0,0"
-              End="0,71.9">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,71.9" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-28.33638671875,30.233203125,56.6727734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\BYU PROGRAMS.Paths[Derived Column Output]"
-          TopLeft="195.95,189">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,69.6"
-              Start="0,0"
-              End="0,62.1">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,62.1" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

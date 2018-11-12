@@ -8,7 +8,7 @@
       DTS:ConnectionString="Data Source=CESPRD.byu.edu;User ID=oit#db656;Persist Security Info=True;Unicode=True;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeAhF7NHH/0OTn+nWssS1sAAAAAACAAAAAAADZgAAwAAAABAAAADLZYJt0pebK/mH+sDH7shDAAAAAASAAACgAAAAEAAAAG5aFDq8UXjSlz5KlAo60PeAAAAAKdX9x2fsJafXNDlESYo4z/w/3bwVADTpewu0BYDdAxIVpVxpcHdfHRRsWm/29P8CBk1UcgAaQWshiv2lO125Ce3JdtP6WxuPzIETvcFyVBq+knh1RTRfYToaaIhSeQLSOucGraeBR2eiLZnlYtsKC/Psv7A934bedKpUbkA7muUUAAAABYAgz2Od6l3mrqGoA3fzdsIv1hg=</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeAhF7NHH/0OTn+nWssS1sAAAAAACAAAAAAADZgAAwAAAABAAAAAcClYpFpCb1MPZzqxGf63QAAAAAASAAACgAAAAEAAAAEst8MG5GcmFXvhg6WsC0wqAAAAA/n94bkA9AjcDd0c6s1+vyyZALIeAkTr0UpADbVyauePxhAUrDXyEL2FR66Rhze4z0slCA2v5LhkbyqCWqWlqD9gaQPdr1FCEBEgmg9ZWufhkpwJ5W7axJtvjXcvZj6JEnHiKvrxDSjNj0yuD+ANGUeMMH3oLRsZTL2m+xMrJrUoUAAAAW/ql3sXSzS4z/uzGD2g6Djzte8U=</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

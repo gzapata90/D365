@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SD_Identity"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{448317D8-0170-4C45-8D3E-B7AB911CBE8F}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{4E1684B6-959D-495E-BCD3-163F06E781CB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -170,7 +170,7 @@
                   description="Specify what action will be taken when multiple matches are found with Upsert action."
                   expressionType="Notify"
                   name="HandlingOfMultipleMatches"
-                  typeConverter="KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
+                  typeConverter="KingswaySoft.IntegrationToolkit.Common.DescriptiveEnumTypeConverter`1[[KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
                 <property
                   dataType="System.String"
                   description="Workflow to be executed."
@@ -902,8 +902,8 @@ WHERE CONTINENT_CODE IS NOT NULL</property>
               <connections>
                 <connection
                   refId="Package\CONTINENT\Oracle Source.Connections[MSOraConnection]"
-                  connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[cesprd]"
+                  connectionManagerID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
                   description="The Oracle runtime connection"
                   name="MSOraConnection" />
               </connections>
@@ -1277,7 +1277,7 @@ WHERE CONTINENT_CODE IS NOT NULL</property>
                   description="Specify what action will be taken when multiple matches are found with Upsert action."
                   expressionType="Notify"
                   name="HandlingOfMultipleMatches"
-                  typeConverter="KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
+                  typeConverter="KingswaySoft.IntegrationToolkit.Common.DescriptiveEnumTypeConverter`1[[KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
                 <property
                   dataType="System.String"
                   description="Workflow to be executed."
@@ -2193,8 +2193,8 @@ WHERE CONTINENT_CODE IS NOT NULL</property>
               <connections>
                 <connection
                   refId="Package\COUNTRY\Oracle Source.Connections[MSOraConnection]"
-                  connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[cesprd]"
+                  connectionManagerID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
                   description="The Oracle runtime connection"
                   name="MSOraConnection" />
               </connections>
@@ -2664,7 +2664,7 @@ WHERE CONTINENT_CODE IS NOT NULL</property>
                   description="Specify what action will be taken when multiple matches are found with Upsert action."
                   expressionType="Notify"
                   name="HandlingOfMultipleMatches"
-                  typeConverter="KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
+                  typeConverter="KingswaySoft.IntegrationToolkit.Common.DescriptiveEnumTypeConverter`1[[KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
                 <property
                   dataType="System.String"
                   description="Workflow to be executed."
@@ -3397,8 +3397,8 @@ ORDER BY DOMAIN_VALUE</property>
               <connections>
                 <connection
                   refId="Package\ETHNICITY\Oracle Source.Connections[MSOraConnection]"
-                  connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[cesprd]"
+                  connectionManagerID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
                   description="The Oracle runtime connection"
                   name="MSOraConnection" />
               </connections>
@@ -3654,7 +3654,7 @@ ORDER BY DOMAIN_VALUE</property>
                   description="Specify what action will be taken when multiple matches are found with Upsert action."
                   expressionType="Notify"
                   name="HandlingOfMultipleMatches"
-                  typeConverter="KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
+                  typeConverter="KingswaySoft.IntegrationToolkit.Common.DescriptiveEnumTypeConverter`1[[KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
                 <property
                   dataType="System.String"
                   description="Workflow to be executed."
@@ -4387,8 +4387,8 @@ ORDER BY DOMAIN_VALUE</property>
               <connections>
                 <connection
                   refId="Package\LANGUAGE\Oracle Source.Connections[MSOraConnection]"
-                  connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[cesprd]"
+                  connectionManagerID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
                   description="The Oracle runtime connection"
                   name="MSOraConnection" />
               </connections>
@@ -4644,7 +4644,7 @@ ORDER BY DOMAIN_VALUE</property>
                   description="Specify what action will be taken when multiple matches are found with Upsert action."
                   expressionType="Notify"
                   name="HandlingOfMultipleMatches"
-                  typeConverter="KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
+                  typeConverter="KingswaySoft.IntegrationToolkit.Common.DescriptiveEnumTypeConverter`1[[KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
                 <property
                   dataType="System.String"
                   description="Workflow to be executed."
@@ -5375,8 +5375,8 @@ ORDER BY RELIGION_CODE</property>
               <connections>
                 <connection
                   refId="Package\RELIGION\Oracle Source.Connections[MSOraConnection]"
-                  connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[cesprd]"
+                  connectionManagerID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
                   description="The Oracle runtime connection"
                   name="MSOraConnection" />
               </connections>
@@ -5632,7 +5632,7 @@ ORDER BY RELIGION_CODE</property>
                   description="Specify what action will be taken when multiple matches are found with Upsert action."
                   expressionType="Notify"
                   name="HandlingOfMultipleMatches"
-                  typeConverter="KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
+                  typeConverter="KingswaySoft.IntegrationToolkit.Common.DescriptiveEnumTypeConverter`1[[KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmUpsertHandlingOfMultipleMatches">3</property>
                 <property
                   dataType="System.String"
                   description="Workflow to be executed."
@@ -6375,8 +6375,8 @@ ORDER BY VISA_TYPE</property>
               <connections>
                 <connection
                   refId="Package\WORK AUTH TYPE\Oracle Source.Connections[MSOraConnection]"
-                  connectionManagerID="{D891773B-EF5C-4479-955C-203530BDD0B9}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[cesprd]"
+                  connectionManagerID="{34157E21-0D5D-4608-8469-E3EF18D85BB2}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CESPRD]"
                   description="The Oracle runtime connection"
                   name="MSOraConnection" />
               </connections>
@@ -6489,13 +6489,13 @@ ORDER BY VISA_TYPE</property>
           Id="Package\COUNTRY"
           TopLeft="89,124" />
         <NodeLayout
-          Size="131,42"
-          Id="Package\LANGUAGE"
-          TopLeft="289,46" />
-        <NodeLayout
           Size="132,42"
           Id="Package\ETHNICITY"
           TopLeft="298,125" />
+        <NodeLayout
+          Size="131,42"
+          Id="Package\LANGUAGE"
+          TopLeft="289,46" />
         <NodeLayout
           Size="127,42"
           Id="Package\RELIGION"
@@ -6543,13 +6543,13 @@ ORDER BY VISA_TYPE</property>
           Id="Package\CONTINENT\Dynamics CRM Destination"
           TopLeft="100,179" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\CONTINENT\Dynamics Error Log"
-          TopLeft="115,257" />
-        <NodeLayout
           Size="154,42"
           Id="Package\CONTINENT\Derived Column"
           TopLeft="127,104" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\CONTINENT\Dynamics Error Log"
+          TopLeft="115,257" />
         <EdgeLayout
           Id="Package\CONTINENT.Paths[Oracle Source Output]"
           TopLeft="204,77">
@@ -6564,28 +6564,6 @@ ORDER BY VISA_TYPE</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,19.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CONTINENT.Paths[Derived Column Output]"
-          TopLeft="203.25,146">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,33"
-              Start="0,0"
-              End="0,25.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6618,6 +6596,28 @@ ORDER BY VISA_TYPE</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CONTINENT.Paths[Derived Column Output]"
+          TopLeft="203.25,146">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33"
+              Start="0,0"
+              End="0,25.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -6631,17 +6631,17 @@ ORDER BY VISA_TYPE</property>
           Id="Package\COUNTRY\Dynamics CRM Destination"
           TopLeft="49,199" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\COUNTRY\Dynamics Error Log"
-          TopLeft="70,278" />
+          Size="144,42"
+          Id="Package\COUNTRY\Oracle Source"
+          TopLeft="83,45" />
         <NodeLayout
           Size="154,42"
           Id="Package\COUNTRY\Derived Column"
           TopLeft="75,123" />
         <NodeLayout
-          Size="144,42"
-          Id="Package\COUNTRY\Oracle Source"
-          TopLeft="83,45" />
+          Size="171,42"
+          Id="Package\COUNTRY\Dynamics Error Log"
+          TopLeft="70,278" />
         <EdgeLayout
           Id="Package\COUNTRY.Paths[Oracle Source Output]"
           TopLeft="153.5,87">
@@ -6656,28 +6656,6 @@ ORDER BY VISA_TYPE</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,28.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\COUNTRY.Paths[Derived Column Output]"
-          TopLeft="151.75,165">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34"
-              Start="0,0"
-              End="0,26.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6710,90 +6688,20 @@ ORDER BY VISA_TYPE</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\LANGUAGE">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="205,42"
-          Id="Package\LANGUAGE\Dynamics CRM Destination"
-          TopLeft="44,166" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\LANGUAGE\Dynamics Error Log"
-          TopLeft="66,243" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\LANGUAGE\Derived Column"
-          TopLeft="67,95" />
         <EdgeLayout
-          Id="Package\LANGUAGE.Paths[Derived Column Output]"
-          TopLeft="145.25,137">
+          Id="Package\COUNTRY.Paths[Derived Column Output]"
+          TopLeft="151.75,165">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,29"
+              EndConnector="0,34"
               Start="0,0"
-              End="0,21.5">
+              End="0,26.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\LANGUAGE.Paths[Error Output]"
-          TopLeft="149,208">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,35"
-              Start="0,0"
-              End="0,27.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-28.33638671875,8.033203125,56.6727734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="144,42"
-          Id="Package\LANGUAGE\Oracle Source"
-          TopLeft="73,21" />
-        <EdgeLayout
-          Id="Package\LANGUAGE.Paths[Oracle Source Output]"
-          TopLeft="144.5,63">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,32"
-              Start="0,0"
-              End="0,24.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.5" />
+                    End="0,26.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6811,39 +6719,21 @@ ORDER BY VISA_TYPE</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="154,42"
-          Id="Package\ETHNICITY\Derived Column"
-          TopLeft="72,99" />
+          Size="171,42"
+          Id="Package\ETHNICITY\Dynamics Error Log"
+          TopLeft="69,253" />
         <NodeLayout
           Size="205,42"
           Id="Package\ETHNICITY\Dynamics CRM Destination"
           TopLeft="48,171" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\ETHNICITY\Dynamics Error Log"
-          TopLeft="69,253" />
-        <EdgeLayout
-          Id="Package\ETHNICITY.Paths[Derived Column Output]"
-          TopLeft="149.75,141">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,30"
-              Start="0,0"
-              End="0,22.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="154,42"
+          Id="Package\ETHNICITY\Derived Column"
+          TopLeft="72,99" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\ETHNICITY\Oracle Source"
+          TopLeft="78,18" />
         <EdgeLayout
           Id="Package\ETHNICITY.Paths[Error Output]"
           TopLeft="152.5,213">
@@ -6868,10 +6758,28 @@ ORDER BY VISA_TYPE</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="144,42"
-          Id="Package\ETHNICITY\Oracle Source"
-          TopLeft="78,18" />
+        <EdgeLayout
+          Id="Package\ETHNICITY.Paths[Derived Column Output]"
+          TopLeft="149.75,141">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30"
+              Start="0,0"
+              End="0,22.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\ETHNICITY.Paths[Oracle Source Output]"
           TopLeft="149.5,60">
@@ -6898,25 +6806,53 @@ ORDER BY VISA_TYPE</property>
     </LayoutInfo>
   </TaskHost>
   <TaskHost
-    design-time-name="Package\RELIGION">
+    design-time-name="Package\LANGUAGE">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="205,42"
-          Id="Package\RELIGION\Dynamics CRM Destination"
-          TopLeft="36,176" />
-        <NodeLayout
           Size="171,42"
-          Id="Package\RELIGION\Dynamics Error Log"
-          TopLeft="55,267" />
+          Id="Package\LANGUAGE\Dynamics Error Log"
+          TopLeft="66,243" />
+        <NodeLayout
+          Size="205,42"
+          Id="Package\LANGUAGE\Dynamics CRM Destination"
+          TopLeft="44,166" />
         <NodeLayout
           Size="154,42"
-          Id="Package\RELIGION\Derived Column"
-          TopLeft="56,105" />
+          Id="Package\LANGUAGE\Derived Column"
+          TopLeft="67,95" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\LANGUAGE\Oracle Source"
+          TopLeft="73,21" />
         <EdgeLayout
-          Id="Package\RELIGION.Paths[Derived Column Output]"
-          TopLeft="135.75,147">
+          Id="Package\LANGUAGE.Paths[Error Output]"
+          TopLeft="149,208">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35"
+              Start="0,0"
+              End="0,27.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-28.33638671875,8.033203125,56.6727734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\LANGUAGE.Paths[Derived Column Output]"
+          TopLeft="145.25,137">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6936,6 +6872,52 @@ ORDER BY VISA_TYPE</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\LANGUAGE.Paths[Oracle Source Output]"
+          TopLeft="144.5,63">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32"
+              Start="0,0"
+              End="0,24.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\RELIGION">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\RELIGION\Dynamics Error Log"
+          TopLeft="55,267" />
+        <NodeLayout
+          Size="205,42"
+          Id="Package\RELIGION\Dynamics CRM Destination"
+          TopLeft="36,176" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\RELIGION\Derived Column"
+          TopLeft="56,105" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\RELIGION\Oracle Source"
+          TopLeft="66,25" />
         <EdgeLayout
           Id="Package\RELIGION.Paths[Error Output]"
           TopLeft="139.5,218">
@@ -6960,10 +6942,28 @@ ORDER BY VISA_TYPE</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="144,42"
-          Id="Package\RELIGION\Oracle Source"
-          TopLeft="66,25" />
+        <EdgeLayout
+          Id="Package\RELIGION.Paths[Derived Column Output]"
+          TopLeft="135.75,147">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29"
+              Start="0,0"
+              End="0,21.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\RELIGION.Paths[Oracle Source Output]"
           TopLeft="135.5,67">
@@ -6995,43 +6995,21 @@ ORDER BY VISA_TYPE</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="144,42"
-          Id="Package\WORK AUTH TYPE\Oracle Source"
-          TopLeft="51,26" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\WORK AUTH TYPE\Derived Column"
-          TopLeft="51,101" />
+          Size="171,42"
+          Id="Package\WORK AUTH TYPE\Dynamics Error Log"
+          TopLeft="54,261" />
         <NodeLayout
           Size="205,42"
           Id="Package\WORK AUTH TYPE\Dynamics CRM Destination"
           TopLeft="33,180" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\WORK AUTH TYPE\Dynamics Error Log"
-          TopLeft="54,261" />
-        <EdgeLayout
-          Id="Package\WORK AUTH TYPE.Paths[Oracle Source Output]"
-          TopLeft="125.5,68">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,33"
-              Start="0,0"
-              End="0,25.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="154,42"
+          Id="Package\WORK AUTH TYPE\Derived Column"
+          TopLeft="51,101" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\WORK AUTH TYPE\Oracle Source"
+          TopLeft="51,26" />
         <EdgeLayout
           Id="Package\WORK AUTH TYPE.Paths[Derived Column Output]"
           TopLeft="131.75,143">
@@ -7046,6 +7024,28 @@ ORDER BY VISA_TYPE</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\WORK AUTH TYPE.Paths[Oracle Source Output]"
+          TopLeft="125.5,68">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33"
+              Start="0,0"
+              End="0,25.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
