@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SD_Identity"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{4E1684B6-959D-495E-BCD3-163F06E781CB}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{1F463A11-0C3F-4C5D-9F00-0A3E049D5894}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -581,14 +581,6 @@
                       externalMetadataColumnId="Package\CONTINENT\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_process_log]"
                       lineageId="Package\CONTINENT\Dynamics CRM Destination.Outputs[Error Output].Columns[CrmErrorMessage]" />
                     <inputColumn
-                      refId="Package\CONTINENT\Dynamics Error Log.Inputs[Input].Columns[CONTINENT_CODE]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="2"
-                      cachedName="CONTINENT_CODE"
-                      externalMetadataColumnId="Package\CONTINENT\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_source_id]"
-                      lineageId="Package\CONTINENT\Oracle Source.Outputs[Oracle Source Output].Columns[CONTINENT_CODE]" />
-                    <inputColumn
                       refId="Package\CONTINENT\Dynamics Error Log.Inputs[Input].Columns[SOURCE TYPE]"
                       cachedDataType="wstr"
                       cachedLength="12"
@@ -601,6 +593,22 @@
                       cachedName="ErrorCode"
                       externalMetadataColumnId="Package\CONTINENT\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_title]"
                       lineageId="Package\CONTINENT\Dynamics CRM Destination.Outputs[Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\CONTINENT\Dynamics Error Log.Inputs[Input].Columns[CONTINENT_DESC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="37"
+                      cachedName="CONTINENT_DESC"
+                      externalMetadataColumnId="Package\CONTINENT\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_regardingrecord]"
+                      lineageId="Package\CONTINENT\Oracle Source.Outputs[Oracle Source Output].Columns[CONTINENT_DESC]" />
+                    <inputColumn
+                      refId="Package\CONTINENT\Dynamics Error Log.Inputs[Input].Columns[CONTINENT_CODE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="CONTINENT_CODE"
+                      externalMetadataColumnId="Package\CONTINENT\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_source_id]"
+                      lineageId="Package\CONTINENT\Oracle Source.Outputs[Oracle Source Output].Columns[CONTINENT_CODE]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1883,14 +1891,6 @@ WHERE CONTINENT_CODE IS NOT NULL</property>
                       externalMetadataColumnId="Package\COUNTRY\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_process_log]"
                       lineageId="Package\COUNTRY\Dynamics CRM Destination.Outputs[Error Output].Columns[CrmErrorMessage]" />
                     <inputColumn
-                      refId="Package\COUNTRY\Dynamics Error Log.Inputs[Input].Columns[COUNTRY_CODE]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="3"
-                      cachedName="COUNTRY_CODE"
-                      externalMetadataColumnId="Package\COUNTRY\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_source_id]"
-                      lineageId="Package\COUNTRY\Oracle Source.Outputs[Oracle Source Output].Columns[COUNTRY_CODE]" />
-                    <inputColumn
                       refId="Package\COUNTRY\Dynamics Error Log.Inputs[Input].Columns[SOURCE TYPE]"
                       cachedDataType="wstr"
                       cachedLength="7"
@@ -1903,6 +1903,22 @@ WHERE CONTINENT_CODE IS NOT NULL</property>
                       cachedName="ErrorCode"
                       externalMetadataColumnId="Package\COUNTRY\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_title]"
                       lineageId="Package\COUNTRY\Dynamics CRM Destination.Outputs[Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\COUNTRY\Dynamics Error Log.Inputs[Input].Columns[COUNTRY]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="35"
+                      cachedName="COUNTRY"
+                      externalMetadataColumnId="Package\COUNTRY\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_regardingrecord]"
+                      lineageId="Package\COUNTRY\Oracle Source.Outputs[Oracle Source Output].Columns[COUNTRY]" />
+                    <inputColumn
+                      refId="Package\COUNTRY\Dynamics Error Log.Inputs[Input].Columns[COUNTRY_CODE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="COUNTRY_CODE"
+                      externalMetadataColumnId="Package\COUNTRY\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_source_id]"
+                      lineageId="Package\COUNTRY\Oracle Source.Outputs[Oracle Source Output].Columns[COUNTRY_CODE]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3103,6 +3119,14 @@ WHERE CONTINENT_CODE IS NOT NULL</property>
                       cachedName="ETHNICITY_CODE"
                       externalMetadataColumnId="Package\ETHNICITY\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_source_id]"
                       lineageId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Output].Columns[ETHNICITY_CODE]" />
+                    <inputColumn
+                      refId="Package\ETHNICITY\Dynamics Error Log.Inputs[Input].Columns[ETHNICITY_DESC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="ETHNICITY_DESC"
+                      externalMetadataColumnId="Package\ETHNICITY\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_regardingrecord]"
+                      lineageId="Package\ETHNICITY\Oracle Source.Outputs[Oracle Source Output].Columns[ETHNICITY_DESC]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4073,14 +4097,6 @@ ORDER BY DOMAIN_VALUE</property>
                       externalMetadataColumnId="Package\LANGUAGE\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_process_log]"
                       lineageId="Package\LANGUAGE\Dynamics CRM Destination.Outputs[Error Output].Columns[CrmErrorMessage]" />
                     <inputColumn
-                      refId="Package\LANGUAGE\Dynamics Error Log.Inputs[Input].Columns[LANGUAGE_CODE]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="30"
-                      cachedName="LANGUAGE_CODE"
-                      externalMetadataColumnId="Package\LANGUAGE\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_source_id]"
-                      lineageId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Output].Columns[LANGUAGE_CODE]" />
-                    <inputColumn
                       refId="Package\LANGUAGE\Dynamics Error Log.Inputs[Input].Columns[SOURCE TYPE]"
                       cachedDataType="wstr"
                       cachedLength="8"
@@ -4093,6 +4109,22 @@ ORDER BY DOMAIN_VALUE</property>
                       cachedName="ErrorCode"
                       externalMetadataColumnId="Package\LANGUAGE\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_title]"
                       lineageId="Package\LANGUAGE\Dynamics CRM Destination.Outputs[Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\LANGUAGE\Dynamics Error Log.Inputs[Input].Columns[LANGUAGE_DESC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="LANGUAGE_DESC"
+                      externalMetadataColumnId="Package\LANGUAGE\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_regardingrecord]"
+                      lineageId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Output].Columns[LANGUAGE_DESC]" />
+                    <inputColumn
+                      refId="Package\LANGUAGE\Dynamics Error Log.Inputs[Input].Columns[LANGUAGE_CODE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="LANGUAGE_CODE"
+                      externalMetadataColumnId="Package\LANGUAGE\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_source_id]"
+                      lineageId="Package\LANGUAGE\Oracle Source.Outputs[Oracle Source Output].Columns[LANGUAGE_CODE]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -5083,6 +5115,14 @@ ORDER BY DOMAIN_VALUE</property>
                       cachedName="ErrorCode"
                       externalMetadataColumnId="Package\RELIGION\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_title]"
                       lineageId="Package\RELIGION\Dynamics CRM Destination.Outputs[Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\RELIGION\Dynamics Error Log.Inputs[Input].Columns[RELIGION_DESC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="RELIGION_DESC"
+                      externalMetadataColumnId="Package\RELIGION\Dynamics Error Log.Inputs[Input].ExternalColumns[oit_regardingrecord]"
+                      lineageId="Package\RELIGION\Oracle Source.Outputs[Oracle Source Output].Columns[RELIGION_DESC]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">

@@ -15,7 +15,7 @@
       <OraWinAuthentication>False</OraWinAuthentication>
       <OraEnableDetailedTracing>False</OraEnableDetailedTracing>
       <OraPassword
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeAhF7NHH/0OTn+nWssS1sAAAAAACAAAAAAADZgAAwAAAABAAAAASiI9nFD/Cu50Xr7AD1qoCAAAAAASAAACgAAAAEAAAAE31H5ggWnC19QE2UB1NC49AAAAAn7LutAG+hfuz0oq88gkP7daRAkYmD3fTf+LLHJukk18MnlQr/zzw80Qdkxbhjqjt9wzG/SzLddCN2eLkT+29JxQAAAAKJ23PsE7RIYImSCkM7I2JwbnHQA==</OraPassword>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeAhF7NHH/0OTn+nWssS1sAAAAAACAAAAAAADZgAAwAAAABAAAADMzZGplftAvwAsn9K6BmVmAAAAAASAAACgAAAAEAAAAC4UtyTDqR5BBL6UOUx3d/VAAAAAudakRYzTD6h/oqpdTU2ViaCVNPtBLwjDZGg0DmFN9/2nA2EvGdN/Pq+GSF56gioo5wXuJZZ42NNoWHOuIxXX7xQAAACy5kdH/dmAAw3+YeoYVlM2mONOqA==</OraPassword>
     </OracleXMLPackage>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
